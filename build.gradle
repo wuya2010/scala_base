@@ -1,0 +1,191 @@
+group 'com.elianda'
+version '1.0'
+
+wrapper {
+    gradleVersion = '4.10.2' //version required
+}
+
+def scalaVersion = "2.11.12"
+def sparkVersion = "2.3.4"
+ext {
+    baseScala = scalaVersion.substring(0, scalaVersion.lastIndexOf("."))
+}
+
+apply plugin: 'java'
+apply plugin: 'scala'
+apply plugin: 'idea'
+apply plugin: 'org.hidetake.ssh'
+
+sourceCompatibility = 1.8
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.hidetake:gradle-ssh-plugin:2.9.0'
+        classpath 'org.codehaus.groovy:groovy-backports-compat23:2.4.6'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile "org.scalatest:scalatest_$baseScala:3.0.5"
+    testCompile "org.scala-lang.modules:scala-xml_$baseScala:1.1.0"
+    testCompile 'junit:junit:4.12'
+    testRuntime "org.pegdown:pegdown:1.4.2"
+
+    //compile files('libs/JdbcMariaDB.jar')
+
+    compile "org.scala-lang:scala-library:$scalaVersion"
+    compile "org.scala-lang:scala-reflect:$scalaVersion"
+
+    compile group: 'org.apache.spark', name: "spark-core_$baseScala", version: "$sparkVersion"
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
+   // compile group: 'com.google.code.gson', name: 'gson', version: '2.8.2'
+    compile group: 'org.apache.spark', name: "spark-streaming_$baseScala", version: "$sparkVersion"
+    
+    
+    
+//    
+//    compile group: 'org.apache.spark', name: "spark-streaming-kafka-0-8_2.11",version: "$sparkVersion"
+//    
+//    //spark-streaming-kafka-0-10_2.11
+//    compile group: 'org.apache.spark', name: "spark-streaming-kafka-0-10_2.11",version: "$sparkVersion"
+//    
+//    
+//    
+    
+    compile(group: 'org.apache.spark', name: "spark-sql_$baseScala", version: "$sparkVersion") {
+        exclude(module: 'commons-compiler')
+    }
+    compile group: 'org.codehaus.janino', name: 'commons-compiler', version: '3.0.8'
+
+    compile group: 'org.apache.spark', name: "spark-hive_$baseScala", version: "$sparkVersion"
+    compile group: 'org.apache.spark', name: "spark-mllib_$baseScala", version: "$sparkVersion"
+    compile group: 'org.apache.hive', name: 'hive-jdbc', version: '1.2.1'
+    //compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.46'
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.23.Final'
+    compile group: 'org.json4s', name: "json4s-native_$baseScala", version: '3.5.4'
+    compile group: 'com.typesafe', name: 'config', version: '1.3.2'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.5'
+
+    //添加oracle依赖  ('com.oracle:ojdbc6:11.2.0.4.0')
+   // compile group: 'com.oracle.database.jdbc', name: 'ojdbc6', version: '11.2.0.4'
+    compile group: 'redis.clients', name: 'jedis', version: '2.9.0'
+    
+    
+    compile group: 'org.apache.commons', name: 'commons-email', version: '1.2'
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.47'
+    compile group: 'org.json4s', name: "json4s-native_$baseScala", version: '3.2.11'
+    compile group: 'com.typesafe', name: 'config', version: '1.3.2'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.5'
+
+    compile group: 'org.apache.poi', name: 'poi', version: '4.0.1'
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.0.1'
+//    compile group: 'org.alibaba',name:'fastjson',version:'1.2.47'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.25'
+
+    //swift解析包2018-11-25新增
+    compile group: 'com.prowidesoftware', name: 'pw-swift-core', version: 'SRU2018-8.0.1'
+
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src/main/scala']
+        }
+    }
+    test {
+        scala {
+            srcDirs = ['src/test/scala']
+        }
+    }
+}
+
+configurations {
+    jar.archiveName = "$rootProject.name" + ".jar"
+}
+
+remotes {
+    web01 {
+        role 'webServers'
+        host = '192.168.65.10'
+        user = 'zyc'
+        password = '123456'
+    }
+}
+
+task reload {
+    doLast {
+        ssh.run {
+            session(remotes.web01) {
+                put from: 'build/libs/demo_poc_shenzhen.jar', into: '/home/zyc/'
+                //execute 'chown -R zyc:zyc /home/zyc/demo_poc_shenzhen.jar'
+                execute 'chmod +x /home/zyc/demo_poc_shenzhen.jar'
+            }
+        }
+    }
+}
+
+jar {
+    from {
+        //添加依懒到打包文件
+        zip64 = true
+        configurations.testCompile.findAll {
+            it.name.contains("orc-core") || it.name.contains("scala") || it.name.contains("commons-email") ||
+                    it.name.contains("fastjson") || it.name.contains("json4s") || it.name.contains("config") ||
+                    it.name.contains("httpclient") || it.name.contains("poi") || it.name.contains("xml") ||
+                    it.name.contains("commons-collections4") || it.name.contains("compress") || it.name.contains("paranamer")
+        }.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    manifest {
+        attributes 'Main-Class': 'com.elianda.SystemInit'
+    }
+}
+
+println "Building project with Scala version $baseScala" + new Date()
+
+//必不可少-如果没有则项目本身的代码不会打进去
+tasks.withType(ScalaCompile) {
+    scalaCompileOptions.additionalParameters = [
+            "-deprecation",
+            "-unchecked",
+            "-encoding", "utf8",
+            "-Xlog-reflective-calls",
+            "-feature",
+            "-language:postfixOps",
+            "-language:implicitConversions",
+            "-language:existentials",
+            "-Xlint:by-name-right-associative",
+            "-Xlint:delayedinit-select",
+            "-Xlint:doc-detached",
+            "-Xlint:missing-interpolator",
+            "-Xlint:nullary-override",
+            "-Xlint:nullary-unit",
+            "-Xlint:option-implicit",
+            "-Xlint:package-object-classes",
+            "-Xlint:poly-implicit-overload",
+            "-Xlint:private-shadow",
+            "-Xlint:stars-align",
+            "-Xlint:type-parameter-shadow",
+            "-Xlint:unsound-match",
+    ]
+
+    if (baseScala != '2.11') {
+        scalaCompileOptions.additionalParameters += [
+                "-Xlint:constant",
+                "-Xlint:unused"
+        ]
+    }
+
+    configure(scalaCompileOptions.forkOptions) {
+        memoryMaximumSize = '2g'
+        //jvmArgs = ['-Xss2m', '-XX:MaxPermSize=512m']
+    }
+}

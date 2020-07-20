@@ -1,0 +1,2878 @@
+[
+  {
+    "tb_name": "TRX_VOUCHER_DTAL",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/TRX_VOUCHER_DTAL.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "APPG_MODE STRING,APPG_DATE STRING,T_SYS_REL_TIME STRING,T_SYS_OP_TIME STRING,SEND_FLAG STRING,N_AMT DOUBLE,I_TRX_AC_TYPE LONG,I_EVENT_TIMES LONG,I_ENTRY_NUMBER LONG,INT_RATE2 DOUBLE,INT_RATE1 DOUBLE,EXCH_RATE2 DOUBLE,EXCH_RATE1 DOUBLE,D_VALUE_DATE STRING,D_SYS_REL_DATE STRING,D_SYS_OP_DATE STRING,C_VOUCHER_CTNT STRING,C_VCH_DESC STRING,C_VCH_BRIEF STRING,C_UNIT_CODE STRING,C_TRX_STATUS STRING,C_TRX_REF STRING,C_TRX_INDX STRING,C_TRANS_CODE STRING,C_THEIR_REF_NO STRING,C_SETTL_AC_PS STRING,C_RELEASE_OP_DESC STRING,C_RELEASE_OP STRING,C_RELEASE_DATE STRING,C_PRINTER_NAME STRING,C_MODULE STRING,C_MANUAL_FLAG STRING,C_MAIN_REF STRING,C_LAST_MODI_OP_DESC STRING,C_LAST_MODI_OP STRING,C_GL_SL STRING,C_FUR_REF STRING,C_FUNC_ID STRING,C_FH97_TRXS_FLAG STRING,C_FH91_TRXS_FLAG STRING,C_ENTRY_STATUS STRING,C_DC_FLAG STRING,C_CU_REL_CODE STRING,C_CUST_ID STRING,C_CUST_CODE STRING,C_CUST_CNTY_CODE STRING,C_CUST_BS_TYPE STRING,C_CUST_BS_GROUP STRING,C_CP_UNIT_CODE STRING,C_CNTY_CODE STRING,C_CCY STRING,C_BOOKING_BU STRING,C_BK_GROUP_ID STRING,C_AO_CODE STRING,C_AC_TITLE STRING,BATCH_NO STRING,C_SUMM_INFO STRING,ACNO_TYPE STRING,C_CHG_INT_TAX_NO LONG,C_CHG_INT_TAX_RT STRING,C_CHG_INT_TAX_RT_V DOUBLE,ETL_DATE STRING,C_SUB_ACTYPE_NO STRING,C_AC_SEQNO STRING,C_AC_SEQNO_SUB STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "T_SYS_REL_TIME",
+        "alias": "T_SYS_REL_TIME",
+        "context": "系统时间"
+      },
+      {
+        "name": "N_AMT",
+        "alias": "N_AMT",
+        "context": "出帐金额"
+      },
+      {
+        "name": "I_EVENT_TIMES",
+        "alias": "I_EVENT_TIMES",
+        "context": "交易次数"
+      },
+      {
+        "name": "INT_RATE2",
+        "alias": "INT_RATE2",
+        "context": "原牌价２"
+      },
+      {
+        "name": "INT_RATE1",
+        "alias": "INT_RATE1",
+        "context": "原牌价１"
+      },
+      {
+        "name": "EXCH_RATE2",
+        "alias": "EXCH_RATE2",
+        "context": "平仓价或对客买入价２"
+      },
+      {
+        "name": "EXCH_RATE1",
+        "alias": "EXCH_RATE1",
+        "context": "平仓价或对客买入价１"
+      },
+      {
+        "name": "D_VALUE_DATE",
+        "alias": "D_VALUE_DATE",
+        "context": "交易日期"
+      },
+      {
+        "name": "C_UNIT_CODE",
+        "alias": "C_UNIT_CODE",
+        "context": "机构号"
+      },
+      {
+        "name": "C_TRX_STATUS",
+        "alias": "C_TRX_STATUS",
+        "context": "交易状态"
+      },
+      {
+        "name": "C_TRX_REF",
+        "alias": "C_TRX_REF",
+        "context": "二级流水号"
+      },
+      {
+        "name": "C_TRX_INDX",
+        "alias": "C_TRX_INDX",
+        "context": "系统栏位"
+      },
+      {
+        "name": "C_TRANS_CODE",
+        "alias": "C_TRANS_CODE",
+        "context": "产品码"
+      },
+      {
+        "name": "C_MODULE",
+        "alias": "C_MODULE",
+        "context": "模组名"
+      },
+      {
+        "name": "C_MAIN_REF",
+        "alias": "C_MAIN_REF",
+        "context": "主流水号"
+      },
+      {
+        "name": "C_GL_SL",
+        "alias": "C_GL_SL",
+        "context": "客户帐号"
+      },
+      {
+        "name": "C_DC_FLAG",
+        "alias": "C_DC_FLAG",
+        "context": "借贷记标识"
+      },
+      {
+        "name": "C_CUST_ID",
+        "alias": "C_CUST_ID",
+        "context": "客户ID"
+      },
+      {
+        "name": "C_CUST_CODE",
+        "alias": "C_CUST_CODE",
+        "context": "客户所属机构"
+      },
+      {
+        "name": "C_CUST_CNTY_CODE",
+        "alias": "C_CUST_CNTY_CODE",
+        "context": "客户所属国家"
+      },
+      {
+        "name": "C_CNTY_CODE",
+        "alias": "C_CNTY_CODE",
+        "context": "国家代码"
+      },
+      {
+        "name": "C_CCY",
+        "alias": "C_CCY",
+        "context": "币别"
+      },
+      {
+        "name": "C_CHG_INT_TAX_RT",
+        "alias": "C_CHG_INT_TAX_RT",
+        "context": "税率代码"
+      },
+      {
+        "name": "C_CHG_INT_TAX_RT_V",
+        "alias": "C_CHG_INT_TAX_RT_V",
+        "context": "税率取值"
+      },
+      {
+        "name": "C_SUB_ACTYPE_NO",
+        "alias": "C_SUB_ACTYPE_NO",
+        "context": "子账号类别码"
+      },
+      {
+        "name": "C_AC_SEQNO",
+        "alias": "C_AC_SEQNO",
+        "context": "册号"
+      },
+      {
+        "name": "C_AC_SEQNO_SUB",
+        "alias": "C_AC_SEQNO_SUB",
+        "context": "序号"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "TRX_VOUCHER_DTAL"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "SWIF",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/SWIF.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "CP06_APPG_MODE STRING,CP06_APPG_DATE STRING,CP06_INST_NO STRING,CP06_BRANCH_NO STRING,CP06_POST_DATE STRING,CP06_REFERENCE STRING,CP06_PLACED_DATE STRING,CP06_PLACED_TIME STRING,CP06_MSG_TYPE LONG,CP06_AMOUNT DECIMAL,CP06_CURRENCY_CODE STRING,CP06_BR_TERM LONG,CP06_TERM LONG,CP06_TELLER LONG,CP06_ACCOUNT_NO LONG,CP06_SYSTEM STRING,DP06_TXN_DATE STRING,CP06_TXN_CODE LONG,CP06_TXN_JRNL_NO LONG,CP06_CUSTOMER_REFERENCE STRING,CP06_STAH_FLAG STRING,CP06_APPL_ID STRING,CP06_MESSAGE_PRIORITY STRING,CP06_SENDERS_ID STRING,CP06_SENDERS_ID_TYPE STRING,CP06_CORR_BANK_ID STRING,CP06_CORR_BANK_GL_NO LONG,CP06_CORR_BANK_ADDRESS STRING,CP06_CORR_BANK_ADDR_TYP STRING,CP06_COVER_BANK_ID STRING,CP06_II_AND_AWI_PRESENT STRING,CP06_URGENCY STRING,CP06_CHECK_NO STRING,CP06_CORR_BANK_CHIP_NO STRING,CP06_CORR_BANK_CHIP_PID STRING,SWIF_TRANSACTION_REF STRING,CP06_PYMT_PURPOSE STRING,CP06_FILLER2 STRING,CP06_FILLER3 STRING,CP06_SPY_113_ID STRING,CP06_CBNA_1 STRING,CP06_CBNA_2 STRING,CP06_CBNA_3 STRING,CP06_CBNA_4 STRING,CP06_SWIFT_IND STRING,CP06_BNA_OPTION STRING,CP06_BNA_1 STRING,CP06_BNA_2 STRING,CP06_BNA_3 STRING,CP06_BNA_4 STRING,CP06_BAN STRING,CP06_RNA_OPTION STRING,CP06_RNA_1 STRING,CP06_RNA_2 STRING,CP06_RNA_3 STRING,CP06_RNA_4 STRING,CP06_RNA_5 STRING,CP06_RCNA_OPTION STRING,CP06_RCNA_1 STRING,CP06_RCNA_2 STRING,CP06_RCNA_3 STRING,CP06_RCNA_4 STRING,CP06_RCAN_ACCT_TYPE STRING,CP06_RCAN_BYTE STRING,DP06_TXN_VALUE_DATE STRING,CP06_CHARGE_TYPE STRING,CP06_PD_BYTE_1 STRING,CP06_PD_BYTE_2 STRING,CP06_PD_BYTE_3 STRING,CP06_PD_BYTE_4 STRING,CP06_BTB_BYTE_1 STRING,CP06_BTB_BYTE_2 STRING,CP06_BTB_BYTE_3 STRING,CP06_BTB_BYTE_4 STRING,CP06_BTB_BYTE_5 STRING,CP06_BTB_BYTE_6 STRING,CP06_CVR_BANK_GL_NO LONG,CP06_CVR_BANK_ADDR STRING,CP06_CVR_BANK_ADDR_TYPE STRING,CP06_CB_OPTION STRING,CP06_CB_BYTE_1 STRING,CP06_CB_BYTE_2 STRING,CP06_CB_BYTE_3 STRING,CP06_CB_BYTE_4 STRING,CP06_CB_AC_TYPE STRING,CP06_CBAT_BYTE STRING,CP06_MT202_REQUIRED_IND STRING,CP06_OI_OPTION STRING,CP06_OI_BYTE_1 STRING,CP06_OI_BYTE_2 STRING,CP06_OI_BYTE_3 STRING,CP06_OI_BYTE_4 STRING,CP06_OI_ACCT_TYPE STRING,CP06_OIAN_BYTE STRING,CP06_II_OPTION STRING,CP06_II_BYTE_1 STRING,CP06_II_BYTE_2 STRING,CP06_II_BYTE_3 STRING,CP06_II_BYTE_4 STRING,CP06_II_BYTE_5 STRING,CP06_II_BYTE_6 STRING,CP06_II_ACCT_TYPE STRING,CP06_IIAN_BYTE STRING,CP06_AWI_OPTION STRING,CP06_AWI_BYTE_1 STRING,CP06_AWI_BYTE_2 STRING,CP06_AWI_BYTE_3 STRING,CP06_AWI_BYTE_4 STRING,CP06_AWI_ACCT_TYPE STRING,CP06_AWIAN_BYTE STRING,CP06_BI_OPTION STRING,CP06_BI_BYTE_1 STRING,CP06_BI_BYTE_2 STRING,CP06_BI_BYTE_3 STRING,CP06_BI_BYTE_4 STRING,CP06_BI_ACCT_TYPE STRING,CP06_BIAN_BYTE STRING,CP06_REL_REF_NO STRING,CP06_OC_ID_TYPE STRING,CP06_OC_ID_NO STRING,CP06_OC_RES_PHONE STRING,CP06_TRAN_AMOUNT DECIMAL,CP06_TRAN_CURR STRING,CP06_PROC_FLAG STRING,CP06_BUSINESS_NO STRING,CP06_PRIORITY_WAIT LONG,CP06_REGION STRING,CP06_IMAGE_FLAG STRING,CP06_IMAGE_LOAD_DATE STRING,CP06_IMAGE_LOAD_TIME STRING,CP06_TRAN_TIME STRING,CP06_SPVR_TELLER LONG,CP06_MSG_PRIORITY STRING,CP06_REMIT_PROD STRING,CP06_GPI_ID STRING,CP06_MID_FEE DECIMAL,CP06_GPI_FEE_TPYE STRING,CP06_GPI_NOTICE_FLAG STRING,CP06_EMAIL STRING,FILLER STRING,CP06_ADV_FEE_FLAG STRING,CP06_FULLPAY_FLAG STRING,CP06_GROUP_FLAG STRING,CP06_REMIT_TYPE STRING,CP06_DEL_FLAG STRING,CP06_DNF_FLAG LONG,CP06_LAST_MAINT_DATE1 STRING,CP06_LAST_MAINT_FLAG1 STRING,ETL_DATE STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "CP06_APPG_DATE",
+        "alias": "CP06_APPG_DATE",
+        "context": "采集日期"
+      },
+      {
+        "name": "CP06_INST_NO",
+        "alias": "CP06_INST_NO",
+        "context": "机构号"
+      },
+      {
+        "name": "CP06_BRANCH_NO",
+        "alias": "CP06_BRANCH_NO",
+        "context": "网点号"
+      },
+      {
+        "name": "CP06_POST_DATE",
+        "alias": "CP06_POST_DATE",
+        "context": "实际交易发生日期"
+      },
+      {
+        "name": "CP06_REFERENCE",
+        "alias": "CP06_REFERENCE",
+        "context": "ISN参考号"
+      },
+      {
+        "name": "CP06_TERM",
+        "alias": "CP06_TERM",
+        "context": "交易柜员终端号"
+      },
+      {
+        "name": "CP06_TELLER",
+        "alias": "CP06_TELLER",
+        "context": "交易柜员号"
+      },
+      {
+        "name": "CP06_PYMT_PURPOSE",
+        "alias": "CP06_PYMT_PURPOSE",
+        "context": "用途"
+      },
+      {
+        "name": "CP06_BUSINESS_NO",
+        "alias": "CP06_BUSINESS_NO",
+        "context": "业务编号"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "SWIF"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "CADM",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/CADM.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "OPC0_APPG_MODE STRING,OPC0_APPG_DATE STRING,OPC0_INST_NO STRING,OPC0_PARTITION_ID STRING,OPC0_CARD_NO STRING,OPC0_PROD_NO STRING,OPC0_BIN_NO STRING,OPC0_CUST_NO STRING,OPC0_NAME1 STRING,OPC0_NAME2 STRING,OPC0_HAS_ADDRESS STRING,OPC0_ADDRESS_EXPIRY STRING,OPC0_CREATION_DATE STRING,OPC0_ISSUE_DATE STRING,OPC0_EXPIRY_DATE STRING,OPC0_NEXT_EXPIRY_DATE STRING,OPC0_REISSUE_DATE STRING,OPC0_COL_BRANCH STRING,OPC0_ISSUE_BRANCH STRING,OPC0_ISSUE_REGION STRING,OPC0_PROV_BR_NO STRING,OPC0_HOT_REASON STRING,OPC0_HOT_BRANCH LONG,OPC0_HOT_DATE STRING,OPC0_WARM_REASON STRING,OPC0_WARM_BRANCH STRING,OPC0_BLACKLIST_REASON STRING,OPC0_BLACKLIST_BRANCH STRING,OPC0_BLACKLIST_DATE STRING,OPC0_NOTE STRING,OPC0_PARENT STRING,OPC0_PAN_OLD STRING,OPC0_ATM_ACCOUNT STRING,OPC0_ISSUE_INDEX STRING,OPC0_PERSONALISED STRING,OPC0_LIMITVALUE_FLAG STRING,OPC0_SMS STRING,OPC0_FORMAL_LOST_DATE STRING,OPC0_FM_LOST_REI_DATE STRING,OPC0_INFORMAL_LOST_DATE STRING,OPC0_PIN_LOST_DATE STRING,OPC0_PIN_LOST_REI_DATE STRING,OPC0_PIN_FORCE_INIT STRING,OPC0_HAS_CVV STRING,OPC0_CVK_TYPE STRING,OPC0_NEW_CVK_TYPE STRING,OPC0_PVK_TYPE STRING,OPC0_PVV STRING,OPC0_PCV STRING,OPC0_PVV_SM4 STRING,OPC0_PCV_SM4 STRING,OPC0_PASSWORD STRING,OPC0_CVV_RETRIES STRING,OPC0_PIN_RETRIES STRING,OPC0_LAST_PIN_RETRY_DATE STRING,OPC0_ANNUAL_FEE_PERCENT STRING,OPC0_ANNUAL_FREE_PERIOD STRING,OPC0_ANNUAL_FEE_RESIDU DOUBLE,OPC0_ANNUAL_FEE_NEXT STRING,OPC0_ANNUAL_FEE_DATE STRING,OPC0_LAST_FEE_DATE STRING,OPC0_WITHDRAWAL_DATE STRING,OPC0_LAST_USE_DATE STRING,OPC0_REISSUE_FLAG STRING,OPC0_LIFE_STATUS STRING,OPC0_NEW_LIFE_STATUS STRING,OPC0_REISSUE_STATUS STRING,OPC0_HOT_STATUS STRING,OPC0_WARM_STATUS STRING,OPC0_BLACK_FREEZE_STAT STRING,OPC0_LOST_STATUS STRING,OPC0_PINLOST_STATUS STRING,OPC0_CVVLOCK_STATUS STRING,OPC0_PINLOCK_STATUS STRING,OPC0_ACTIVE_STATUS STRING,OPC0_FILLER1_STATUS STRING,OPC0_FILLER2_STATUS STRING,OPC0_FILLER3_STATUS STRING,OPC0_FILLER4_STATUS STRING,OPC0_FILLER5_STATUS STRING,OPC0_CBRD_INFO1 STRING,OPC0_CBRD_INFO2 STRING,OPC0_FILLER6 STRING,OPC0_TIME_FACTOR1 LONG,OPC0_TXN_COUNTER1 LONG,OPC0_TIME_FACTOR2 LONG,OPC0_TXN_COUNTER2 LONG,OPC0_TIME_FACTOR3 LONG,OPC0_TXN_COUNTER3 LONG,OPC0_FILLER7 STRING,OPC0_FILLER8 STRING,OPC0_FILLER9 STRING,OPC0_FILLER10 STRING,OPC0_FILLER11 STRING,OPC0_FILLER12 STRING,OPC0_FILLER13 STRING,OPC0_FILLER14 STRING,OPC0_FILLER15 STRING,OPC0_LAST_MAINT_DATE STRING,OPC0_LAST_MAINT_STAT STRING,ETL_DATE STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "OPC0_CUST_NO",
+        "alias": "OPC0_CUST_NO",
+        "context": "客户号"
+      },
+      {
+        "name": "OPC0_ATM_ACCOUNT",
+        "alias": "OPC0_ATM_ACCOUNT",
+        "context": "ATM/POS主帐号"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "CADM"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "CADV",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/CADV.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "OP07_APPG_MODE STRING,OP07_APPG_DATE LONG,OP07_INST_NO STRING,OP07_PAY_NO STRING,OP07_CR_ACCT_NO STRING,OP07_CR_TXN_DATE LONG,OP07_JRNL_NO LONG,OP07_BR_NO STRING,OP07_TELLER_NO STRING,OP07_SPRVSR_NO STRING,OP07_BUSINESS_NO STRING,OP07_BR_NAME STRING,OP07_CR_ACCT_NAME STRING,OP07_CR_ACCT_ADD1 STRING,OP07_CR_ACCT_ADD2 STRING,OP07_REM_ISSUE_DATE STRING,OP07_REM_CUR STRING,OP07_REM_AMT DOUBLE,OP07_EX_RATE_BUY DOUBLE,OP07_EX_RATE_SEL DOUBLE,OP07_CR_CUR STRING,OP07_CR_AMT DOUBLE,OP07_PROD_TYPE STRING,OP07_PROD_SUB_TYPE STRING,OP07_DD_DRAFT_NO STRING,OP07_DR_CARD_NO STRING,OP07_PAY_DTLS STRING,OP07_REF_NO STRING,OP07_BASE_EQUIV DOUBLE,OP07_BEN_NAME STRING,OP07_BEN_ADD1 STRING,OP07_BEN_ADD2 STRING,OP07_ORD_CUST_NAME STRING,OP07_ORD_CUST_ADD1 STRING,OP07_ORD_CUST_ADD2 STRING,OP07_OVERSEA_CHRG_CUR STRING,OP07_OVERSEA_CHRG DOUBLE,OP07_REMIT_BANK STRING,OP07_CHRG_CUR STRING,OP07_CABLE_FEE DOUBLE,OP07_COMM_FEE DOUBLE,OP07_BS_DIFF_FEE DOUBLE,OP07_NON_FX_FEE DOUBLE,OP07_REDIRECT_FEE DOUBLE,OP07_INVEST_FEE DOUBLE,OP07_RTN_REM_FEE DOUBLE,OP07_LOSS_STOP_FEE DOUBLE,OP07_WARRANT_PURC_FEE DOUBLE,OP07_OTH_FEE DOUBLE,OP07_SAFE_NO STRING,OP07_PAY_BANK STRING,OP07_RECEI_BANK STRING,OP07_CHRG_FLAG STRING,OP07_PYMT_MODE STRING,OP07_PRINT_FLAG STRING,OP07_ADVICE_TYPE STRING,OP07_PAY_70_DTLS STRING,OP07_PAY_71A STRING,OP07_PAY_71F_CUR STRING,OP07_PAY_71F_AMT STRING,OP07_PAY_71G_CUR STRING,OP07_PAY_71G_AMT STRING,OP07_RECEI_BANK_NAME1 STRING,OP07_RECEI_BANK_NAME2 STRING,OP07_RECEI_BANK_ADRES1 STRING,OP07_RECEI_BANK_ADRES2 STRING,OP07_PROMO_CODE STRING,OP07_BOCS_D_REMARKS STRING,OP07_SUB_BUSI_TYPE STRING,OP07_BASE_BUY_RATE DOUBLE,OP07_BASE_SELL_RATE DOUBLE,OP07_OTHER_AMOUNT_FLAG STRING,OP07_OTHER_AMOUNT_CURR STRING,OP07_OTHER_AMOUNT DOUBLE,OP07_RESERVE_FIELD1 STRING,OP07_RESERVE_FIELD2 STRING,OP07_DEP_DURA LONG,OP07_DEP_BASE STRING,OP07_DEP_VOLNO LONG,OP07_DEP_SEQNO LONG,OP07_LAST_MAINT_DATE STRING,OP07_LAST_MAINT_STAT STRING,ETL_DATE STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "OP07_APPG_DATE",
+        "alias": "op07_APPG_DATE",
+        "context": "采集日期"
+      },
+      {
+        "name": "OP07_PAY_NO",
+        "alias": "op07_PAY_NO",
+        "context": "PAY_NO"
+      },
+      {
+        "name": "OP07_CR_ACCT_NO",
+        "alias": "op07_CR_ACCT_NO",
+        "context": "贷记账号"
+      },
+      {
+        "name": "OP07_CR_TXN_DATE",
+        "alias": "op07_CR_TXN_DATE",
+        "context": "贷记交易日期"
+      },
+      {
+        "name": "OP07_JRNL_NO",
+        "alias": "op07_JRNL_NO",
+        "context": "日志号"
+      },
+      {
+        "name": "OP07_TELLER_NO",
+        "alias": "op07_TELLER_NO",
+        "context": "交易柜员"
+      },
+      {
+        "name": "OP07_SPRVSR_NO",
+        "alias": "op07_SPRVSR_NO",
+        "context": "复核柜员"
+      },
+      {
+        "name": "OP07_BUSINESS_NO",
+        "alias": "op07_BUSINESS_NO",
+        "context": "业务编号"
+      },
+      {
+        "name": "OP07_BR_NAME",
+        "alias": "op07_BR_NAME",
+        "context": "分行名称"
+      },
+      {
+        "name": "OP07_CR_ACCT_NAME",
+        "alias": "op07_CR_ACCT_NAME",
+        "context": "贷记账户名称"
+      },
+      {
+        "name": "OP07_CR_CUR",
+        "alias": "op07_CR_CUR",
+        "context": "贷记币种"
+      },
+      {
+        "name": "OP07_CR_AMT",
+        "alias": "op07_CR_AMT",
+        "context": "贷记金额"
+      },
+      {
+        "name": "OP07_DR_CARD_NO",
+        "alias": "op07_DR_CARD_NO",
+        "context": "汇出借记卡卡号"
+      },
+      {
+        "name": "OP07_SAFE_NO",
+        "alias": "op07_SAFE_NO",
+        "context": "申报号"
+      },
+      {
+        "name": "OP07_CHRG_FLAG",
+        "alias": "op07_CHRG_FLAG",
+        "context": "申报标识"
+      },
+      {
+        "name": "OP07_SUB_BUSI_TYPE",
+        "alias": "OP07_SUB_BUSI_TYPE",
+        "context": "业务类型子类"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "CADV"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "EXCL_MASTER",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/EXCL_MASTER.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "APPG_MODE STRING,APPG_DATE STRING,C_MAIN_REF STRING,C_EVENT_TIME STRING,C_BK_GROUP_ID STRING,C_CUST_ID STRING,C_UNIT_CODE STRING,I_EVENT_TIMES LONG,C_RELE_BY STRING,D_RELE_DATE STRING,C_TRX_REF STRING,C_FUNC_SHORT_NAME STRING,C_TRX_STATUS STRING,C_EVENT_NAME STRING,C_LOCKED_FLAG STRING,C_LOCK_FUNC_ID STRING,D_SYS_OP_DATE STRING,T_SYS_OP_TIME STRING,D_SYS_REL_DATE STRING,T_SYS_REL_TIME STRING,D_CREA_DATE STRING,I_CANCEL_ETIMES LONG,C_NOW_EVENT STRING,C_USER_ID STRING,C_CP_UNIT_CODE STRING,C_MODULE STRING,C_LOCKED_OP STRING,D_SVR_GMT STRING,T_SVR_GMT STRING,D_OP_DATE STRING,D_SYS_CREA_DATE STRING,T_SYS_CREA_TIME STRING,VIP_LEVEL STRING,TRX_DT STRING,CLERK_ID STRING,EVENT_TYPE STRING,CLOSE_FLG STRING,AMD_DT STRING,AMD_TIMES LONG,OUR_AC_BK_ID STRING,TENOR_DAYS LONG,COMMODITY STRING,TENOR_TYPE STRING,OUR_AC_NO STRING,CHECK_NO STRING,CLAIM_DT STRING,SETTLE_DT1 STRING,RONGXIN_REF STRING,START_DT STRING,MAIL_MTHD STRING,MATURITY STRING,OUR_AC_BK_NM STRING,DRAFT_AMT DOUBLE,RCV_RET_DOC_DT STRING,RONGFU_REF STRING,STOP_TRACE_DT STRING,TRACE_TIMES LONG,CLAIM_BAL DOUBLE,INV_NO STRING,SETTLE_TIMES LONG,DISCT_REF STRING,DRAFT_BAL DOUBLE,SETTLE_DT2 STRING,MAIL_TIMES LONG,PERCENT DOUBLE,LESS_PLUS_REASON STRING,LESS_PLUS_AMT DOUBLE,AWB_CR STRING,CLAIM_AMT DOUBLE,CUST_INV STRING,EL_SHIP STRING,LESS_PLUS_FLG STRING,INSU STRING,DRAFT STRING,OTHERS STRING,INSP_ANALY STRING,DOCS STRING,TLX_FAX STRING,NB_L STRING,SSCO_CERT STRING,BENE_CERT STRING,POST_RECPT STRING,DRAWEE_NM_ADD STRING,ACPT_DT STRING,TRACE_DT STRING,CR_AMT DOUBLE,CR_CCY STRING,CR_VALUE_DT STRING,FFT_TRF_FLG STRING,SHORT_REASON STRING,LONG_AMT DOUBLE,CR_LONG_FLG STRING,SHORT_AMT DOUBLE,ACK_DT STRING,AUTH_REL_DT STRING,PAY_FOREIGN_AMT DOUBLE,DLY_RT DOUBLE,PROCEED_FLG STRING,TRACE_FLG STRING,CL_DUE_DT STRING,CL_NO_CU STRING,CL_AMT_CU DOUBLE,CL_NO_BK STRING,CL_AMT_BK DOUBLE,GTS_BR_ID STRING,GTS_BR_NM STRING,COLL_BK_NM_ADD STRING,OUR_AC_BK_ID_SW STRING,COLL_BK_ID_SW STRING,COLL_BK_NM STRING,COLL_BK_ID STRING,CL_COMMIT_ID_CU STRING,PRESENT_BK_ID STRING,PRESENT_BK_NM STRING,COLL_TYPE STRING,COLL_DT STRING,COLL_CCY STRING,MIX_COLL_INSTR STRING,DRAWER_NM STRING,PACK STRING,WAIVED_BK_CHG STRING,ADV_PMT_DT STRING,PAYER_AREA_CODE STRING,CHECK_NO2 STRING,DRAWER_ID STRING,INSU_PAY_DT STRING,PRESENT_BK_ID_SW STRING,WEIGHT STRING,ADV_PMT_AMT DOUBLE,COMM STRING,DRAWER_NM_C STRING,FWD_CONTRACT_NO STRING,CHECK_NO3 STRING,B_L STRING,COLL_AMT DOUBLE,ORIG STRING,COLL_BK_INSTR STRING,INSP STRING,RCV_INT_SHORT_DT STRING,FIVE_LEVEL_FLG STRING,QUAL STRING,PRESENT_BK_NM_ADD STRING,GSP STRING,PAY_FOREIGN_CCY STRING,GTS_PRVN_ID STRING,DELAY_RT DOUBLE,CL_ID_BK STRING,OTHER_BK_REF STRING,CL_TRX_TYPE STRING,CL_TRX_FLG STRING,CL_CCY_BK STRING,CL_START_DT STRING,CL_ID_CU STRING,CL_CCY_CU STRING,CL_ADJUST_FLG STRING,TSP_TELE_NO STRING,TTL_FINC_BAL DOUBLE,FINC_TYPE_EX STRING,FFT_REF STRING,REMARK_FAVOR STRING,CL_FINC_FLG STRING,FAVOR_FLG STRING,FAVOR_ST_FLG STRING,REMARK_ST_FAVOR STRING,CHG_BY_EX STRING,BA_ADOC_NO STRING,SUSP_842_DT STRING,GTS_DISTRICT_CODE STRING,BLACK_DATA_TYPE STRING,BLACK_TRX_TYPE STRING,CHG_MTHD_EX STRING,FINC_AMT_842 DOUBLE,PRODUCT_CODE_COLL STRING,GL_PROD_CODE_COLL STRING,COLL_AMD_AMT_TIMES LONG,SETTLE_842_NO STRING,FINC_TIMES_COLL LONG,C_LOCKED_BU STRING,EXCL_REMARK STRING,REMARK_ST_INSTR STRING,ST_TSP_8114_AMT DOUBLE,ST_8114_BAL DOUBLE,UNIT_TYPE STRING,CUST_NEW_TYPE STRING,GTS_VCH_ID STRING,GTS_VCH_NM STRING,DRAWER_NM_ADD STRING,CUST_TYPE_FLG STRING,ETL_DATE STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "C_MAIN_REF",
+        "alias": "C_MAIN_REF",
+        "context": "主流水号"
+      },
+      {
+        "name": "C_UNIT_CODE",
+        "alias": "C_UNIT_CODE",
+        "context": "机构号"
+      },
+      {
+        "name": "I_EVENT_TIMES",
+        "alias": "I_EVENT_TIMES",
+        "context": "交易次数"
+      },
+      {
+        "name": "C_TRX_STATUS",
+        "alias": "C_TRX_STATUS",
+        "context": "交易状态"
+      },
+      {
+        "name": "C_CP_UNIT_CODE",
+        "alias": "C_CP_UNIT_CODE",
+        "context": "中心机构号"
+      },
+      {
+        "name": "VIP_LEVEL",
+        "alias": "VIP_LEVEL",
+        "context": "客户VIP级别"
+      },
+      {
+        "name": "TRX_DT",
+        "alias": "TRX_DT",
+        "context": "交易日期"
+      },
+      {
+        "name": "EVENT_TYPE",
+        "alias": "EVENT_TYPE",
+        "context": "事件类型"
+      },
+      {
+        "name": "CLOSE_FLG",
+        "alias": "CLOSE_FLG",
+        "context": "闭卷标识"
+      },
+      {
+        "name": "OUR_AC_BK_ID",
+        "alias": "OUR_AC_BK_ID",
+        "context": "我行帐户行的ID号"
+      },
+      {
+        "name": "TENOR_DAYS",
+        "alias": "TENOR_DAYS",
+        "context": "汇票付款期限"
+      },
+      {
+        "name": "COMMODITY",
+        "alias": "COMMODITY",
+        "context": "出口商品类别"
+      },
+      {
+        "name": "TENOR_TYPE",
+        "alias": "TENOR_TYPE",
+        "context": "汇票付款方式"
+      },
+      {
+        "name": "OUR_AC_NO",
+        "alias": "OUR_AC_NO",
+        "context": "帐户行账号"
+      },
+      {
+        "name": "CHECK_NO",
+        "alias": "CHECK_NO",
+        "context": "出口核销单号"
+      },
+      {
+        "name": "START_DT",
+        "alias": "START_DT",
+        "context": "起始日"
+      },
+      {
+        "name": "MAIL_MTHD",
+        "alias": "MAIL_MTHD",
+        "context": "寄单方式"
+      },
+      {
+        "name": "MATURITY",
+        "alias": "MATURITY",
+        "context": "到期日"
+      },
+      {
+        "name": "OUR_AC_BK_NM",
+        "alias": "OUR_AC_BK_NM",
+        "context": "帐户行名称"
+      },
+      {
+        "name": "DRAFT_AMT",
+        "alias": "DRAFT_AMT",
+        "context": "汇票金额"
+      },
+      {
+        "name": "RCV_RET_DOC_DT",
+        "alias": "RCV_RET_DOC_DT",
+        "context": "收到退单日"
+      },
+      {
+        "name": "TRACE_TIMES",
+        "alias": "TRACE_TIMES",
+        "context": "催收次数"
+      },
+      {
+        "name": "INV_NO",
+        "alias": "INV_NO",
+        "context": "发票号码"
+      },
+      {
+        "name": "SETTLE_TIMES",
+        "alias": "SETTLE_TIMES",
+        "context": "结汇次数"
+      },
+      {
+        "name": "DISCT_REF",
+        "alias": "DISCT_REF",
+        "context": "贴现融资号"
+      },
+      {
+        "name": "DRAFT_BAL",
+        "alias": "DRAFT_BAL",
+        "context": "表外余额"
+      },
+      {
+        "name": "PERCENT",
+        "alias": "PERCENT",
+        "context": "增减比例"
+      },
+      {
+        "name": "LESS_PLUS_REASON",
+        "alias": "LESS_PLUS_REASON",
+        "context": "增减额原因"
+      },
+      {
+        "name": "AWB_CR",
+        "alias": "AWB_CR",
+        "context": "航空运单"
+      },
+      {
+        "name": "CUST_INV",
+        "alias": "CUST_INV",
+        "context": "客户发票单"
+      },
+      {
+        "name": "DRAFT",
+        "alias": "DRAFT",
+        "context": "汇票份数"
+      },
+      {
+        "name": "SSCO_CERT",
+        "alias": "SSCO_CERT",
+        "context": "船公司证明份数"
+      },
+      {
+        "name": "BENE_CERT",
+        "alias": "BENE_CERT",
+        "context": "受益人证明份数"
+      },
+      {
+        "name": "POST_RECPT",
+        "alias": "POST_RECPT",
+        "context": "邮局收据份数"
+      },
+      {
+        "name": "ACPT_DT",
+        "alias": "ACPT_DT",
+        "context": "BP承兑日期"
+      },
+      {
+        "name": "CR_AMT",
+        "alias": "CR_AMT",
+        "context": "减额付款金额"
+      },
+      {
+        "name": "CR_CCY",
+        "alias": "CR_CCY",
+        "context": "收汇币别"
+      },
+      {
+        "name": "FFT_TRF_FLG",
+        "alias": "FFT_TRF_FLG",
+        "context": "是否转卖标识"
+      },
+      {
+        "name": "SHORT_REASON",
+        "alias": "SHORT_REASON",
+        "context": "短款原因"
+      },
+      {
+        "name": "CR_LONG_FLG",
+        "alias": "CR_LONG_FLG",
+        "context": "长款处理方式"
+      },
+      {
+        "name": "SHORT_AMT",
+        "alias": "SHORT_AMT",
+        "context": "短款金额"
+      },
+      {
+        "name": "PAY_FOREIGN_AMT",
+        "alias": "PAY_FOREIGN_AMT",
+        "context": "向国外付费金额"
+      },
+      {
+        "name": "PROCEED_FLG",
+        "alias": "PROCEED_FLG",
+        "context": "货款处理方式"
+      },
+      {
+        "name": "TRACE_FLG",
+        "alias": "TRACE_FLG",
+        "context": "催收标识"
+      },
+      {
+        "name": "CL_DUE_DT",
+        "alias": "CL_DUE_DT",
+        "context": "额度到期日"
+      },
+      {
+        "name": "CL_NO_CU",
+        "alias": "CL_NO_CU",
+        "context": "客户额度号"
+      },
+      {
+        "name": "CL_AMT_CU",
+        "alias": "CL_AMT_CU",
+        "context": "客户额度金额"
+      },
+      {
+        "name": "CL_NO_BK",
+        "alias": "CL_NO_BK",
+        "context": "额度号"
+      },
+      {
+        "name": "CL_AMT_BK",
+        "alias": "CL_AMT_BK",
+        "context": "额度金额"
+      },
+      {
+        "name": "GTS_BR_ID",
+        "alias": "GTS_BR_ID",
+        "context": "所属网点ID"
+      },
+      {
+        "name": "GTS_BR_NM",
+        "alias": "GTS_BR_NM",
+        "context": "所属网点名称"
+      },
+      {
+        "name": "COLL_BK_NM_ADD",
+        "alias": "COLL_BK_NM_ADD",
+        "context": "托收行名称及地址"
+      },
+      {
+        "name": "OUR_AC_BK_ID_SW",
+        "alias": "OUR_AC_BK_ID_SW",
+        "context": "我行帐户行的BIC CODE"
+      },
+      {
+        "name": "COLL_BK_ID_SW",
+        "alias": "COLL_BK_ID_SW",
+        "context": "代收行BIC CODE"
+      },
+      {
+        "name": "COLL_BK_NM",
+        "alias": "COLL_BK_NM",
+        "context": "托收行名称"
+      },
+      {
+        "name": "COLL_BK_ID",
+        "alias": "COLL_BK_ID",
+        "context": "托收行ID"
+      },
+      {
+        "name": "CL_COMMIT_ID_CU",
+        "alias": "CL_COMMIT_ID_CU",
+        "context": "客户代码"
+      },
+      {
+        "name": "PRESENT_BK_ID",
+        "alias": "PRESENT_BK_ID",
+        "context": "提示行的ID号"
+      },
+      {
+        "name": "PRESENT_BK_NM",
+        "alias": "PRESENT_BK_NM",
+        "context": "提示行的名称"
+      },
+      {
+        "name": "COLL_TYPE",
+        "alias": "COLL_TYPE",
+        "context": "托收类型"
+      },
+      {
+        "name": "COLL_DT",
+        "alias": "COLL_DT",
+        "context": "托收日期"
+      },
+      {
+        "name": "COLL_CCY",
+        "alias": "COLL_CCY",
+        "context": "托收币别"
+      },
+      {
+        "name": "WAIVED_BK_CHG",
+        "alias": "WAIVED_BK_CHG",
+        "context": "国外行费用放弃标识"
+      },
+      {
+        "name": "DRAWER_ID",
+        "alias": "DRAWER_ID",
+        "context": "出单人的ID号"
+      },
+      {
+        "name": "COLL_AMT",
+        "alias": "COLL_AMT",
+        "context": "托收金额"
+      },
+      {
+        "name": "FIVE_LEVEL_FLG",
+        "alias": "FIVE_LEVEL_FLG",
+        "context": "五级分类标识"
+      },
+      {
+        "name": "PAY_FOREIGN_CCY",
+        "alias": "PAY_FOREIGN_CCY",
+        "context": "向国外付费币别"
+      },
+      {
+        "name": "GTS_PRVN_ID",
+        "alias": "GTS_PRVN_ID",
+        "context": "网点所属省行ID"
+      },
+      {
+        "name": "CL_ID_BK",
+        "alias": "CL_ID_BK",
+        "context": "额度ID"
+      },
+      {
+        "name": "CL_TRX_TYPE",
+        "alias": "CL_TRX_TYPE",
+        "context": "额度类型"
+      },
+      {
+        "name": "CL_TRX_FLG",
+        "alias": "CL_TRX_FLG",
+        "context": "额度交易标识"
+      },
+      {
+        "name": "CL_CCY_BK",
+        "alias": "CL_CCY_BK",
+        "context": "额度币别"
+      },
+      {
+        "name": "CL_START_DT",
+        "alias": "CL_START_DT",
+        "context": "额度起始日"
+      },
+      {
+        "name": "CL_ID_CU",
+        "alias": "CL_ID_CU",
+        "context": "客户额度ID"
+      },
+      {
+        "name": "CL_ADJUST_FLG",
+        "alias": "CL_ADJUST_FLG",
+        "context": "额度调整标识"
+      },
+      {
+        "name": "TTL_FINC_BAL",
+        "alias": "TTL_FINC_BAL",
+        "context": "总的融资余额"
+      },
+      {
+        "name": "FAVOR_FLG",
+        "alias": "FAVOR_FLG",
+        "context": "优惠标识"
+      },
+      {
+        "name": "FAVOR_ST_FLG",
+        "alias": "FAVOR_ST_FLG",
+        "context": "结汇的优惠标识"
+      },
+      {
+        "name": "CHG_BY_EX",
+        "alias": "CHG_BY_EX",
+        "context": "费用承担方"
+      },
+      {
+        "name": "BLACK_DATA_TYPE",
+        "alias": "BLACK_DATA_TYPE",
+        "context": "黑名单数据类型"
+      },
+      {
+        "name": "BLACK_TRX_TYPE",
+        "alias": "BLACK_TRX_TYPE",
+        "context": "黑名单用栏位"
+      },
+      {
+        "name": "CHG_MTHD_EX",
+        "alias": "CHG_MTHD_EX",
+        "context": "费用收取方式"
+      },
+      {
+        "name": "PRODUCT_CODE_COLL",
+        "alias": "PRODUCT_CODE_COLL",
+        "context": "托收产品码"
+      },
+      {
+        "name": "GL_PROD_CODE_COLL",
+        "alias": "GL_PROD_CODE_COLL",
+        "context": "托收总帐产品码"
+      },
+      {
+        "name": "FINC_TIMES_COLL",
+        "alias": "FINC_TIMES_COLL",
+        "context": "主表融资次数"
+      },
+      {
+        "name": "UNIT_TYPE",
+        "alias": "UNIT_TYPE",
+        "context": "机构属性"
+      },
+      {
+        "name": "GTS_VCH_ID",
+        "alias": "GTS_VCH_ID",
+        "context": "记账机构ID"
+      },
+      {
+        "name": "GTS_VCH_NM",
+        "alias": "GTS_VCH_NM",
+        "context": "记账机构名称"
+      },
+      {
+        "name": "CUST_TYPE_FLG",
+        "alias": "CUST_TYPE_FLG",
+        "context": "客户属性"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "EXCL_MASTER"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "SPYY",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/SPYY.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "OA21_APPG_MODE STRING,OA21_APPG_DATE LONG,OA21_INST_NO STRING,OA21_PAY_NO STRING,OA21_REC_SEQ_NO STRING,OA21_MSG_DATA_1 STRING,OA21_MSG_DATA_2 STRING,OA21_MSG_DATA_3 STRING,OA21_MSG_DATA_4 STRING,OA21_MSG_DATA_5 STRING,OA21_MSG_DATA_6 STRING,OA21_MSG_DATA_7 STRING,OA21_MSG_DATA_8 STRING,OA21_LAST_MAINT_DATE STRING,OA21_LAST_MAINT_STAT STRING,ETL_DATE STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "OA21_APPG_MODE",
+        "alias": "OA21_APPG_MODE",
+        "context": "采集模式"
+      },
+      {
+        "name": "OA21_APPG_DATE",
+        "alias": "OA21_APPG_DATE",
+        "context": "采集日期"
+      },
+      {
+        "name": "OA21_INST_NO",
+        "alias": "OA21_INST_NO",
+        "context": "机构号"
+      },
+      {
+        "name": "OA21_PAY_NO",
+        "alias": "OA21_PAY_NO",
+        "context": "汇款标识号"
+      },
+      {
+        "name": "OA21_REC_SEQ_NO",
+        "alias": "OA21_REC_SEQ_NO",
+        "context": "报文序列号"
+      },
+      {
+        "name": "OA21_MSG_DATA_1",
+        "alias": "OA21_MSG_DATA_1",
+        "context": "报文内容_1"
+      },
+      {
+        "name": "OA21_MSG_DATA_2",
+        "alias": "OA21_MSG_DATA_2",
+        "context": "报文内容_2"
+      },
+      {
+        "name": "OA21_MSG_DATA_3",
+        "alias": "OA21_MSG_DATA_3",
+        "context": "报文内容_3"
+      },
+      {
+        "name": "OA21_MSG_DATA_4",
+        "alias": "OA21_MSG_DATA_4",
+        "context": "报文内容_4"
+      },
+      {
+        "name": "OA21_MSG_DATA_5",
+        "alias": "OA21_MSG_DATA_5",
+        "context": "报文内容_5"
+      },
+      {
+        "name": "OA21_MSG_DATA_6",
+        "alias": "OA21_MSG_DATA_6",
+        "context": "报文内容_6"
+      },
+      {
+        "name": "OA21_MSG_DATA_7",
+        "alias": "OA21_MSG_DATA_7",
+        "context": "报文内容_7"
+      },
+      {
+        "name": "OA21_MSG_DATA_8",
+        "alias": "OA21_MSG_DATA_8",
+        "context": "报文内容_8"
+      },
+      {
+        "name": "OA21_LAST_MAINT_DATE",
+        "alias": "OA21_LAST_MAINT_DATE",
+        "context": "最新更新日期"
+      },
+      {
+        "name": "OA21_LAST_MAINT_STAT",
+        "alias": "OA21_LAST_MAINT_STAT",
+        "context": "最新更新状态"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "SPYY"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "IMLC_MASTER",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/IMLC_MASTER.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "APPG_MODE STRING,APPG_DATE STRING,C_MAIN_REF STRING,C_EVENT_TIME STRING,C_BK_GROUP_ID STRING,C_CUST_ID STRING,C_UNIT_CODE STRING,I_EVENT_TIMES LONG,C_RELE_BY STRING,D_RELE_DATE STRING,C_TRX_REF STRING,C_FUNC_SHORT_NAME STRING,C_TRX_STATUS STRING,C_EVENT_NAME STRING,C_LOCKED_FLAG STRING,C_LOCK_FUNC_ID STRING,D_SYS_OP_DATE STRING,T_SYS_OP_TIME STRING,D_SYS_REL_DATE STRING,T_SYS_REL_TIME STRING,D_CREA_DATE STRING,I_CANCEL_ETIMES LONG,C_NOW_EVENT STRING,C_USER_ID STRING,C_CP_UNIT_CODE STRING,C_MODULE STRING,C_LOCKED_OP STRING,D_SVR_GMT STRING,T_SVR_GMT STRING,D_OP_DATE STRING,D_SYS_CREA_DATE STRING,T_SYS_CREA_TIME STRING,VIP_LEVEL STRING,CL_FLG STRING,BR_ID STRING,APPL_NM_ADD STRING,BENE_NM_ADD STRING,APPL_NM STRING,APPL_NM_C STRING,APPL_ID STRING,BR_NM STRING,EVENT_TYPE STRING,AB_TIMES LONG,MRGN_AC_NO1 STRING,MRGN_AC_NO2 STRING,MRGN_BAL1 DOUBLE,MRGN_AC_NO3 STRING,MRGN_BAL3 DOUBLE,MRGN_BAL2 DOUBLE,MRGN_EQ_BAL DOUBLE,ADV_BK_REF_NO STRING,ISSUE_DT STRING,ADV_BK_NM_ADD STRING,ADV_BK_ID STRING,FAV_FLG STRING,FAV_REMARK STRING,CL_PCT DOUBLE,CL_AMT DOUBLE,CLERK_REMARK STRING,MRGN_PCT DOUBLE,ADV_BK_NM STRING,AMD_DT STRING,CONTRACT_NO STRING,AMD_TIMES LONG,TENOR_DAY_MIX LONG,EXPIRY_PLACE STRING,PARTIAL_SHIP STRING,LC_BAL DOUBLE,TENOR_DAYS LONG,NEG_TOLERANCE DOUBLE,LTST_SHIP_DT STRING,REIM_BK_ID STRING,DRAFT_AT STRING,SPECIAL_LC STRING,COMMODITY STRING,SHIP_PERIOD STRING,LC_CCY STRING,REIM_BK_NM_ADD STRING,TENOR_TYPE STRING,POS_TOLERANCE DOUBLE,AVAL_BY STRING,LC_AMT DOUBLE,MIX_LC_AMT DOUBLE,LC_FORM STRING,MIX_PMT_DETAIL STRING,DEFFERED_PMT DOUBLE,DRAWEE_ID STRING,DRAWEE_NM_ADD STRING,TTL_CONTRACT_AMT DOUBLE,TAG_57A STRING,SW_72_RCV_INFO STRING,CONF_INSTR_FLG STRING,SHIP_TO STRING,AV_WT_BK_ID STRING,ADV_THU_BK_ID STRING,PRESENT_DAYS LONG,ACPT_REFUSE_DT STRING,MRGN_CCY2 STRING,ADDIT_CONDITIONS STRING,MRGN_EQ_BAL1 DOUBLE,TTL_PMT_AMT DOUBLE,DRAFT_INV_AMT DOUBLE,AV_WT_BK_NM_ADD STRING,PRICE_TERM STRING,PRESENT_PERIOD STRING,CUST_ACK_FLG STRING,MIN_MRGN_PCT DOUBLE,DRAFT_INV_PCT DOUBLE,MAST_LC_NO STRING,TTL_EXCH_RISK_AMT DOUBLE,INSTR_TO_BK STRING,CR_TYPE STRING,ADV_THU_BK_AC_NO STRING,SPECIAL_TENOR_DAYS LONG,REIM_BK_NM STRING,MRGN_EQ_BAL3 DOUBLE,PORT_FM STRING,ADV_THU_BK_NM STRING,LC_ACK_DT STRING,ATTACH_CONSTANT STRING,TRANSHIP STRING,CANCEL_RTR_CLS_DT STRING,BENE_AC_NO STRING,SHIP_FM STRING,MIX_TENOR_TYPE STRING,LC_EXPIRY_DT STRING,ADDIT_AMT_COV STRING,PRV_LC_AMT DOUBLE,AC_NO_IN_REIM_BK STRING,REIM_CLAUSE_FLG STRING,MRGN_CCY3 STRING,MORTGAGE_AMT DOUBLE,MORTGAGE_PCT DOUBLE,DRAFT_INV_AMT2 DOUBLE,OVERDRAWN_BAL DOUBLE,AFTER_PMT_AVAL_AMT DOUBLE,DRAFT_INV_PCT2 DOUBLE,LC_AVAL_BAL DOUBLE,TAG_42A STRING,SPECIAL_TENOR STRING,DOC_REQ STRING,TTL_ARRIVAL_AMT DOUBLE,MORTGAGE_FLG STRING,MRGN_CCY1 STRING,PIWEN_NO STRING,DESC_GOODS STRING,MRGN_EQ_BAL2 DOUBLE,DRAWEE_AC_NO STRING,TAG_53A STRING,CANCEL_RTR_CLS_FLG STRING,BAL_SHIFT_ISSUE DOUBLE,TAG_41A STRING,MAX_LC_BAL DOUBLE,ADV_THU_BK_NM_ADD STRING,PORT_TO STRING,PRV_LC_BAL DOUBLE,FIVE_LEVEL_FLAG STRING,MRGN_AC_NO1_S STRING,MRGN_AC_NO2_S STRING,MRGN_AC_NO3_S STRING,LC_INCR_AMT DOUBLE,MORTGAGE_INDE_AMT DOUBLE,ADV_BK_ID_SW STRING,ADV_THU_BK_ID_SW STRING,ISSUE_GUA_TYPE STRING,REIM_BK_ID_SW STRING,RESTORE_TIMES LONG,DRAWEE_ID_SW STRING,AV_WT_BK_ID_SW STRING,BRANCH_REMARK STRING,SEND_LC_VIA STRING,GTS_BR_ID STRING,GTS_BR_NM STRING,MRGN_EQ_AMT_PURE DOUBLE,DOCS_TYPE STRING,RELATIVE_TRANSACTION STRING,CL_COMMIT_ID_CU STRING,GTS_PRVN_ID STRING,DESC_GOODS_7012 STRING,DOC_REQ_7012 STRING,ADDIT_CONDI_7012 STRING,DESC_GOODS_7013 STRING,DOC_REQ_7013 STRING,ADDIT_CONDI_7013 STRING,DESC_GOODS_7014 STRING,DOC_REQ_7014 STRING,ADDIT_CONDI_7014 STRING,TENOR_TYPE_V STRING,PARTIAL_SHIP_V STRING,TRANSHIP_V STRING,COMMODITY_V STRING,LC_DECR_AMT DOUBLE,STATUS_TYPE STRING,REFUSE_AMD_FLG STRING,BLACK_CUST_FLAG STRING,CHG_BY STRING,CHG_MTHD STRING,DRAWEE_NM STRING,BEL_AN_BIAO_NO STRING,GOODS_NO STRING,BEI_AN_BIAO_NO STRING,BRANCH_ACK_FLG STRING,PRE_NEGO_TOL DOUBLE,PRE_POS_TOLERANCE DOUBLE,CHG_BY_IM STRING,CHG_MTHD_IM STRING,PRODUCT_CODE STRING,CHG_71B STRING,ISSUE_CPS_DT STRING,GTS_DISTRICT_CODE STRING,MRGN_RISK_AMT1 DOUBLE,MRGN_RISK_AMT2 DOUBLE,MRGN_RISK_AMT3 DOUBLE,AMD_EXPIRY_TIMES LONG,X700_AVAL_BKNM_41A STRING,X700_AVBK_OPTN_41A STRING,BLACK_DATA_TYPE STRING,BLACK_TRX_TYPE STRING,X700_ADV_BKNM_B2 STRING,X700_MAX_CR_AMT39B STRING,X700_PRE_ADVNO_23 STRING,X700_APPL_BKSW_51A STRING,X700_APPL_BKID_51A STRING,X700_APPL_BKNM_51A STRING,X700_APPLBKADD_51A STRING,X700_TAG_51A STRING,X700_APPL_BKAC_51A STRING,X700_REIM_BKSW_53A STRING,X700_REIM_ACNO_53A STRING,X700_CONF_BKSW_49 STRING,X700_CONF_BKID_49 STRING,X700_ADV_THBKSW57A STRING,X700_CONF_BKNM_49 STRING,X700_CONF_BKADD_49 STRING,X701_FLG STRING,NARRITIVE STRING,PRE_AVAL_BAL DOUBLE,TTL_INV_AMT DOUBLE,X700_DRAW_NM_42A STRING,GL_PROD_CODE STRING,FINC_TIMES LONG,C_LOCKED_BU STRING,TRANS_FLAG STRING,INCR_POS DOUBLE,DECR_POS DOUBLE,POS_FLG STRING,MRGN_CUST_ID1 STRING,MRGN_CUST_ID2 STRING,MRGN_CUST_ID3 STRING,MRGN_CUST_NAME_C1 STRING,MRGN_CUST_NAME_C2 STRING,MRGN_CUST_NAME_C3 STRING,MRGN_CUST_NAME1 STRING,MRGN_CUST_NAME2 STRING,MRGN_CUST_NAME3 STRING,ADV_NM_ADD_MERVA STRING,CL_CCY STRING,MARGIN_CCY STRING,PLEDGE_CCY STRING,CUST_NEW_TYPE STRING,UNIT_TYPE STRING,GTS_VCH_ID STRING,GTS_VCH_NM STRING,ZQDM_TSP_AREA STRING,ZQDM_HO_AREA STRING,TENOR_DAYS_TYPE STRING,TTL_BAL_SHIFT_ACPT DOUBLE,ACPT_AMT_TTL DOUBLE,CUST_TYPE_FLG STRING,GTSBOC_CL_CCY STRING,GTSBOC_CL_AMT DOUBLE,GTSBOC_CL_PCT DOUBLE,CL_PRDT_REF STRING,CL_PRDT_NM STRING,CL_BANCS_DAY_RT_LC DOUBLE,CL_BANCS_YEAR_RT_LC DOUBLE,CL_BANCS_RT_CYC_LC STRING,CL_BANCS_DAYS_LC LONG,TTL_CL_EX_BAL DOUBLE,TTL_CL_NE_BAL DOUBLE,FINC_DEVAL_MODE STRING,FINC_DEVAL_AMT DOUBLE,FINC_DEVAL_INCRAMT DOUBLE,FINC_DEVAL_PCT DOUBLE,FINC_DEVAL_DATE STRING,ETL_DATE STRING,APPL_TYPE STRING,ISSUE_LC_FLAG STRING,RETURN_TSP STRING,SECD_BENE_ID STRING,SECD_BENE_ID_ACNO STRING,SECD_BENE_ID_ACNO_S STRING,SECD_CUST_CHG_CCY STRING,PMT_CUST_ID1 STRING,PMT_CUST_ACNO1 STRING,PMT_CUST_ACNO1_S STRING,PMT_CUST_ACNO1_CCY STRING,CLOSE_PRE_LC STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "D_CREA_DATE",
+        "alias": "D_CREA_DATE",
+        "context": "系统栏位"
+      },
+      {
+        "name": "VIP_LEVEL",
+        "alias": "VIP_LEVEL",
+        "context": "客户VIP级别"
+      },
+      {
+        "name": "CL_FLG",
+        "alias": "CL_FLG",
+        "context": "额度标识"
+      },
+      {
+        "name": "BR_ID",
+        "alias": "BR_ID",
+        "context": "出口商所属支行ID"
+      },
+      {
+        "name": "APPL_NM_ADD",
+        "alias": "APPL_NM_ADD",
+        "context": "申请人名称地址"
+      },
+      {
+        "name": "BENE_NM_ADD",
+        "alias": "BENE_NM_ADD",
+        "context": "受益人名称地址"
+      },
+      {
+        "name": "APPL_NM",
+        "alias": "APPL_NM",
+        "context": "申请人英文名称"
+      },
+      {
+        "name": "APPL_NM_C",
+        "alias": "APPL_NM_C",
+        "context": "申请人中文名称"
+      },
+      {
+        "name": "APPL_ID",
+        "alias": "APPL_ID",
+        "context": "申请ID"
+      },
+      {
+        "name": "BR_NM",
+        "alias": "BR_NM",
+        "context": "出口商所属支行名称"
+      },
+      {
+        "name": "EVENT_TYPE",
+        "alias": "EVENT_TYPE",
+        "context": "事件类型"
+      },
+      {
+        "name": "AB_TIMES",
+        "alias": "AB_TIMES",
+        "context": "到单次数"
+      },
+      {
+        "name": "MRGN_BAL1",
+        "alias": "MRGN_BAL1",
+        "context": "保证金余额1"
+      },
+      {
+        "name": "MRGN_BAL3",
+        "alias": "MRGN_BAL3",
+        "context": "保证金余额3"
+      },
+      {
+        "name": "MRGN_BAL2",
+        "alias": "MRGN_BAL2",
+        "context": "保证金余额2"
+      },
+      {
+        "name": "MRGN_EQ_BAL",
+        "alias": "MRGN_EQ_BAL",
+        "context": "保证金折交易币别余额"
+      },
+      {
+        "name": "ISSUE_DT",
+        "alias": "ISSUE_DT",
+        "context": "开证日期"
+      },
+      {
+        "name": "FAV_FLG",
+        "alias": "FAV_FLG",
+        "context": "三率优惠标识"
+      },
+      {
+        "name": "CL_PCT",
+        "alias": "CL_PCT",
+        "context": "额度比例"
+      },
+      {
+        "name": "CL_AMT",
+        "alias": "CL_AMT",
+        "context": "额度金额"
+      },
+      {
+        "name": "MRGN_PCT",
+        "alias": "MRGN_PCT",
+        "context": "保证金比例"
+      },
+      {
+        "name": "CONTRACT_NO",
+        "alias": "CONTRACT_NO",
+        "context": "合同号"
+      },
+      {
+        "name": "TENOR_DAY_MIX",
+        "alias": "TENOR_DAY_MIX",
+        "context": "远期天数"
+      },
+      {
+        "name": "EXPIRY_PLACE",
+        "alias": "EXPIRY_PLACE",
+        "context": "到期地点"
+      },
+      {
+        "name": "LC_BAL",
+        "alias": "LC_BAL",
+        "context": "信用证余额"
+      },
+      {
+        "name": "LTST_SHIP_DT",
+        "alias": "LTST_SHIP_DT",
+        "context": "最迟装船期"
+      },
+      {
+        "name": "DRAFT_AT",
+        "alias": "DRAFT_AT",
+        "context": "汇票付款期限和方式"
+      },
+      {
+        "name": "SPECIAL_LC",
+        "alias": "SPECIAL_LC",
+        "context": "特殊开证形式"
+      },
+      {
+        "name": "COMMODITY",
+        "alias": "COMMODITY",
+        "context": "货物类型"
+      },
+      {
+        "name": "SHIP_PERIOD",
+        "alias": "SHIP_PERIOD",
+        "context": "装船期"
+      },
+      {
+        "name": "LC_CCY",
+        "alias": "LC_CCY",
+        "context": "信用证币别"
+      },
+      {
+        "name": "TENOR_TYPE",
+        "alias": "TENOR_TYPE",
+        "context": "汇票类型"
+      },
+      {
+        "name": "POS_TOLERANCE",
+        "alias": "POS_TOLERANCE",
+        "context": "信用证往上浮动百分比"
+      },
+      {
+        "name": "AVAL_BY",
+        "alias": "AVAL_BY",
+        "context": "信用证兑付方式"
+      },
+      {
+        "name": "LC_AMT",
+        "alias": "LC_AMT",
+        "context": "信用证金额"
+      },
+      {
+        "name": "LC_FORM",
+        "alias": "LC_FORM",
+        "context": "信用证类型"
+      },
+      {
+        "name": "DRAWEE_ID",
+        "alias": "DRAWEE_ID",
+        "context": "汇票付款人ID"
+      },
+      {
+        "name": "DRAWEE_NM_ADD",
+        "alias": "DRAWEE_NM_ADD",
+        "context": "汇票付款人名称地址"
+      },
+      {
+        "name": "TTL_CONTRACT_AMT",
+        "alias": "TTL_CONTRACT_AMT",
+        "context": "合同总金额"
+      },
+      {
+        "name": "TAG_57A",
+        "alias": "TAG_57A",
+        "context": "账户行TAG"
+      },
+      {
+        "name": "CONF_INSTR_FLG",
+        "alias": "CONF_INSTR_FLG",
+        "context": "保兑指示"
+      },
+      {
+        "name": "SHIP_TO",
+        "alias": "SHIP_TO",
+        "context": "发送最终目的地"
+      },
+      {
+        "name": "AV_WT_BK_ID",
+        "alias": "AV_WT_BK_ID",
+        "context": "授权承兑付款行ID"
+      },
+      {
+        "name": "ADV_THU_BK_ID",
+        "alias": "ADV_THU_BK_ID",
+        "context": "中间行ID"
+      },
+      {
+        "name": "PRESENT_DAYS",
+        "alias": "PRESENT_DAYS",
+        "context": "交单天数"
+      },
+      {
+        "name": "MRGN_CCY2",
+        "alias": "MRGN_CCY2",
+        "context": "交易币别保证金币别"
+      },
+      {
+        "name": "MRGN_EQ_BAL1",
+        "alias": "MRGN_EQ_BAL1",
+        "context": "保证金折交易币别余额"
+      },
+      {
+        "name": "TTL_PMT_AMT",
+        "alias": "TTL_PMT_AMT",
+        "context": "付款总金额"
+      },
+      {
+        "name": "DRAFT_INV_AMT",
+        "alias": "DRAFT_INV_AMT",
+        "context": "汇票与发票金额"
+      },
+      {
+        "name": "PRICE_TERM",
+        "alias": "PRICE_TERM",
+        "context": "价格条款"
+      },
+      {
+        "name": "PRESENT_PERIOD",
+        "alias": "PRESENT_PERIOD",
+        "context": "交单期限"
+      },
+      {
+        "name": "CUST_ACK_FLG",
+        "alias": "CUST_ACK_FLG",
+        "context": "客户确认标识"
+      },
+      {
+        "name": "MIN_MRGN_PCT",
+        "alias": "MIN_MRGN_PCT",
+        "context": "最小保证金比例"
+      },
+      {
+        "name": "MAST_LC_NO",
+        "alias": "MAST_LC_NO",
+        "context": "背对背信用证主证号"
+      },
+      {
+        "name": "CR_TYPE",
+        "alias": "CR_TYPE",
+        "context": "信用证类型"
+      },
+      {
+        "name": "ADV_THU_BK_AC_NO",
+        "alias": "ADV_THU_BK_AC_NO",
+        "context": "通知行帐号"
+      },
+      {
+        "name": "SPECIAL_TENOR_DAYS",
+        "alias": "SPECIAL_TENOR_DAYS",
+        "context": "特殊信用证汇票天数"
+      },
+      {
+        "name": "REIM_BK_NM",
+        "alias": "REIM_BK_NM",
+        "context": "偿付行名称"
+      },
+      {
+        "name": "MRGN_EQ_BAL3",
+        "alias": "MRGN_EQ_BAL3",
+        "context": "保证金折交易币别余额"
+      },
+      {
+        "name": "PORT_FM",
+        "alias": "PORT_FM",
+        "context": "装载港口"
+      },
+      {
+        "name": "LC_ACK_DT",
+        "alias": "LC_ACK_DT",
+        "context": "ACKNOWLEDGE 日期"
+      },
+      {
+        "name": "CANCEL_RTR_CLS_DT",
+        "alias": "CANCEL_RTR_CLS_DT",
+        "context": "撤证日期"
+      },
+      {
+        "name": "SHIP_FM",
+        "alias": "SHIP_FM",
+        "context": "装船发运地"
+      },
+      {
+        "name": "MIX_TENOR_TYPE",
+        "alias": "MIX_TENOR_TYPE",
+        "context": "混合信用证汇票期限类型"
+      },
+      {
+        "name": "LC_EXPIRY_DT",
+        "alias": "LC_EXPIRY_DT",
+        "context": "到期日"
+      },
+      {
+        "name": "ADDIT_AMT_COV",
+        "alias": "ADDIT_AMT_COV",
+        "context": "附加金额"
+      },
+      {
+        "name": "PRV_LC_AMT",
+        "alias": "PRV_LC_AMT",
+        "context": "信用证金额"
+      },
+      {
+        "name": "AC_NO_IN_REIM_BK",
+        "alias": "AC_NO_IN_REIM_BK",
+        "context": "偿付行账号"
+      },
+      {
+        "name": "REIM_CLAUSE_FLG",
+        "alias": "REIM_CLAUSE_FLG",
+        "context": "偿付方式"
+      },
+      {
+        "name": "MORTGAGE_AMT",
+        "alias": "MORTGAGE_AMT",
+        "context": "抵押金额"
+      },
+      {
+        "name": "MORTGAGE_PCT",
+        "alias": "MORTGAGE_PCT",
+        "context": "抵押比例"
+      },
+      {
+        "name": "AFTER_PMT_AVAL_AMT",
+        "alias": "AFTER_PMT_AVAL_AMT",
+        "context": "付款后可用信用证余额"
+      },
+      {
+        "name": "LC_AVAL_BAL",
+        "alias": "LC_AVAL_BAL",
+        "context": "可用信用证余额"
+      },
+      {
+        "name": "SPECIAL_TENOR",
+        "alias": "SPECIAL_TENOR",
+        "context": "特殊信用证汇票天数"
+      },
+      {
+        "name": "TTL_ARRIVAL_AMT",
+        "alias": "TTL_ARRIVAL_AMT",
+        "context": "到单总金额"
+      },
+      {
+        "name": "MORTGAGE_FLG",
+        "alias": "MORTGAGE_FLG",
+        "context": "抵押方式"
+      },
+      {
+        "name": "MRGN_CCY1",
+        "alias": "MRGN_CCY1",
+        "context": "交易币别保证金币别"
+      },
+      {
+        "name": "PIWEN_NO",
+        "alias": "PIWEN_NO",
+        "context": "批文号"
+      },
+      {
+        "name": "DESC_GOODS",
+        "alias": "DESC_GOODS",
+        "context": "货物描述"
+      },
+      {
+        "name": "MRGN_EQ_BAL2",
+        "alias": "MRGN_EQ_BAL2",
+        "context": "保证金折交易币别余额"
+      },
+      {
+        "name": "DRAWEE_AC_NO",
+        "alias": "DRAWEE_AC_NO",
+        "context": "受票行帐号"
+      },
+      {
+        "name": "CANCEL_RTR_CLS_FLG",
+        "alias": "CANCEL_RTR_CLS_FLG",
+        "context": "撤销标识"
+      },
+      {
+        "name": "BAL_SHIFT_ISSUE",
+        "alias": "BAL_SHIFT_ISSUE",
+        "context": "表外开证余额"
+      },
+      {
+        "name": "MAX_LC_BAL",
+        "alias": "MAX_LC_BAL",
+        "context": "最大信用证余额"
+      },
+      {
+        "name": "PORT_TO",
+        "alias": "PORT_TO",
+        "context": "卸载港口"
+      },
+      {
+        "name": "PRV_LC_BAL",
+        "alias": "PRV_LC_BAL",
+        "context": "省行信用证余额"
+      },
+      {
+        "name": "FIVE_LEVEL_FLAG",
+        "alias": "FIVE_LEVEL_FLAG",
+        "context": "五级分类标识"
+      },
+      {
+        "name": "LC_INCR_AMT",
+        "alias": "LC_INCR_AMT",
+        "context": "原证信用证增额"
+      },
+      {
+        "name": "MORTGAGE_INDE_AMT",
+        "alias": "MORTGAGE_INDE_AMT",
+        "context": "抵押增减金额"
+      },
+      {
+        "name": "ADV_BK_ID_SW",
+        "alias": "ADV_BK_ID_SW",
+        "context": "通知行BIC CODE"
+      },
+      {
+        "name": "ADV_THU_BK_ID_SW",
+        "alias": "ADV_THU_BK_ID_SW",
+        "context": "中间行BIC CODE"
+      },
+      {
+        "name": "ISSUE_GUA_TYPE",
+        "alias": "ISSUE_GUA_TYPE",
+        "context": "担保标识"
+      },
+      {
+        "name": "REIM_BK_ID_SW",
+        "alias": "REIM_BK_ID_SW",
+        "context": "偿付行BIC CODE"
+      },
+      {
+        "name": "DRAWEE_ID_SW",
+        "alias": "DRAWEE_ID_SW",
+        "context": "汇票付款人BIC"
+      },
+      {
+        "name": "AV_WT_BK_ID_SW",
+        "alias": "AV_WT_BK_ID_SW",
+        "context": "授权承兑付款行BIC CODE"
+      },
+      {
+        "name": "SEND_LC_VIA",
+        "alias": "SEND_LC_VIA",
+        "context": "报文发送方式"
+      },
+      {
+        "name": "GTS_BR_ID",
+        "alias": "GTS_BR_ID",
+        "context": "受益人所属网点ID"
+      },
+      {
+        "name": "GTS_BR_NM",
+        "alias": "GTS_BR_NM",
+        "context": "受益人所属网点名称"
+      },
+      {
+        "name": "MRGN_EQ_AMT_PURE",
+        "alias": "MRGN_EQ_AMT_PURE",
+        "context": "保证金总金额"
+      },
+      {
+        "name": "DOCS_TYPE",
+        "alias": "DOCS_TYPE",
+        "context": "文档类型"
+      },
+      {
+        "name": "RELATIVE_TRANSACTION",
+        "alias": "RELATIVE_TRANSACTION",
+        "context": "类型"
+      },
+      {
+        "name": "GTS_PRVN_ID",
+        "alias": "GTS_PRVN_ID",
+        "context": "网点所属省行ID"
+      },
+      {
+        "name": "DESC_GOODS_7012",
+        "alias": "DESC_GOODS_7012",
+        "context": "货物描述"
+      },
+      {
+        "name": "DOC_REQ_7012",
+        "alias": "DOC_REQ_7012",
+        "context": "分批标志"
+      },
+      {
+        "name": "DESC_GOODS_7013",
+        "alias": "DESC_GOODS_7013",
+        "context": "货物名称"
+      },
+      {
+        "name": "ADDIT_CONDI_7013",
+        "alias": "ADDIT_CONDI_7013",
+        "context": "增加下一步选项:1付款 2承兑"
+      },
+      {
+        "name": "DOC_REQ_7014",
+        "alias": "DOC_REQ_7014",
+        "context": "黑客户标识"
+      },
+      {
+        "name": "ADDIT_CONDI_7014",
+        "alias": "ADDIT_CONDI_7014",
+        "context": "押汇次数"
+      },
+      {
+        "name": "TENOR_TYPE_V",
+        "alias": "TENOR_TYPE_V",
+        "context": "汇票类型"
+      },
+      {
+        "name": "PARTIAL_SHIP_V",
+        "alias": "PARTIAL_SHIP_V",
+        "context": "分批标志"
+      },
+      {
+        "name": "TRANSHIP_V",
+        "alias": "TRANSHIP_V",
+        "context": "装船"
+      },
+      {
+        "name": "COMMODITY_V",
+        "alias": "COMMODITY_V",
+        "context": "货物名称"
+      },
+      {
+        "name": "LC_DECR_AMT",
+        "alias": "LC_DECR_AMT",
+        "context": "信用证减额"
+      },
+      {
+        "name": "STATUS_TYPE",
+        "alias": "STATUS_TYPE",
+        "context": "状态类型"
+      },
+      {
+        "name": "REFUSE_AMD_FLG",
+        "alias": "REFUSE_AMD_FLG",
+        "context": "（本栏位有两种选择：1、Yes 2、No）"
+      },
+      {
+        "name": "BLACK_CUST_FLAG",
+        "alias": "BLACK_CUST_FLAG",
+        "context": "黑客户标识"
+      },
+      {
+        "name": "CHG_BY",
+        "alias": "CHG_BY",
+        "context": "费用承担方标识"
+      },
+      {
+        "name": "CHG_MTHD",
+        "alias": "CHG_MTHD",
+        "context": "费用现收/迟收标识"
+      },
+      {
+        "name": "DRAWEE_NM",
+        "alias": "DRAWEE_NM",
+        "context": "汇票付款人名称"
+      },
+      {
+        "name": "BEL_AN_BIAO_NO",
+        "alias": "BEL_AN_BIAO_NO",
+        "context": "外汇局批件/备案表号码"
+      },
+      {
+        "name": "GOODS_NO",
+        "alias": "GOODS_NO",
+        "context": "物品代码"
+      },
+      {
+        "name": "BRANCH_ACK_FLG",
+        "alias": "BRANCH_ACK_FLG",
+        "context": "（本栏位有两种选择：1、Yes 2、No）"
+      },
+      {
+        "name": "CHG_MTHD_IM",
+        "alias": "CHG_MTHD_IM",
+        "context": "申请方式"
+      },
+      {
+        "name": "PRODUCT_CODE",
+        "alias": "PRODUCT_CODE",
+        "context": "产品码"
+      },
+      {
+        "name": "CHG_71B",
+        "alias": "CHG_71B",
+        "context": "手续费承担方"
+      },
+      {
+        "name": "ISSUE_CPS_DT",
+        "alias": "ISSUE_CPS_DT",
+        "context": "日期"
+      },
+      {
+        "name": "X700_AVBK_OPTN_41A",
+        "alias": "X700_AVBK_OPTN_41A",
+        "context": "1_Any Bank 2_Advising Bank 3_Opening Bank 4_Other"
+      },
+      {
+        "name": "BLACK_DATA_TYPE",
+        "alias": "BLACK_DATA_TYPE",
+        "context": "黑名单数据类型"
+      },
+      {
+        "name": "BLACK_TRX_TYPE",
+        "alias": "BLACK_TRX_TYPE",
+        "context": "黑名单交易类型"
+      },
+      {
+        "name": "X700_ADV_BKNM_B2",
+        "alias": "X700_ADV_BKNM_B2",
+        "context": "通知行名称"
+      },
+      {
+        "name": "X700_MAX_CR_AMT39B",
+        "alias": "X700_MAX_CR_AMT39B",
+        "context": "最大金额"
+      },
+      {
+        "name": "X700_APPL_BKSW_51A",
+        "alias": "X700_APPL_BKSW_51A",
+        "context": "申请人BIC"
+      },
+      {
+        "name": "X700_APPL_BKID_51A",
+        "alias": "X700_APPL_BKID_51A",
+        "context": "申请人ID"
+      },
+      {
+        "name": "X700_APPL_BKNM_51A",
+        "alias": "X700_APPL_BKNM_51A",
+        "context": "申请人名称"
+      },
+      {
+        "name": "X700_APPLBKADD_51A",
+        "alias": "X700_APPLBKADD_51A",
+        "context": "申请人名称、地址"
+      },
+      {
+        "name": "X700_TAG_51A",
+        "alias": "X700_TAG_51A",
+        "context": "TAG标识：A或D，"
+      },
+      {
+        "name": "X700_APPL_BKAC_51A",
+        "alias": "X700_APPL_BKAC_51A",
+        "context": "申请人帐号"
+      },
+      {
+        "name": "X700_REIM_BKSW_53A",
+        "alias": "X700_REIM_BKSW_53A",
+        "context": "的BIC CODE"
+      },
+      {
+        "name": "X700_REIM_ACNO_53A",
+        "alias": "X700_REIM_ACNO_53A",
+        "context": "的帐户"
+      },
+      {
+        "name": "TTL_INV_AMT",
+        "alias": "TTL_INV_AMT",
+        "context": "总的发票金额"
+      },
+      {
+        "name": "GL_PROD_CODE",
+        "alias": "GL_PROD_CODE",
+        "context": "总帐用产品码"
+      },
+      {
+        "name": "ADV_NM_ADD_MERVA",
+        "alias": "ADV_NM_ADD_MERVA",
+        "context": "开证通知行名址栏位"
+      },
+      {
+        "name": "CL_CCY",
+        "alias": "CL_CCY",
+        "context": "授信币别"
+      },
+      {
+        "name": "MARGIN_CCY",
+        "alias": "MARGIN_CCY",
+        "context": "保证金币别"
+      },
+      {
+        "name": "PLEDGE_CCY",
+        "alias": "PLEDGE_CCY",
+        "context": "专项资金币别"
+      },
+      {
+        "name": "CUST_NEW_TYPE",
+        "alias": "CUST_NEW_TYPE",
+        "context": "客户标识"
+      },
+      {
+        "name": "UNIT_TYPE",
+        "alias": "UNIT_TYPE",
+        "context": "机构属性"
+      },
+      {
+        "name": "GTS_VCH_ID",
+        "alias": "GTS_VCH_ID",
+        "context": "记账机构ID"
+      },
+      {
+        "name": "GTS_VCH_NM",
+        "alias": "GTS_VCH_NM",
+        "context": "记账机构名称"
+      },
+      {
+        "name": "ZQDM_TSP_AREA",
+        "alias": "ZQDM_TSP_AREA",
+        "context": "受益人经营地所在国家（地区）代码"
+      },
+      {
+        "name": "ZQDM_HO_AREA",
+        "alias": "ZQDM_HO_AREA",
+        "context": "受益人总部所在国家（地区）代码"
+      },
+      {
+        "name": "TENOR_DAYS_TYPE",
+        "alias": "TENOR_DAYS_TYPE",
+        "context": "期限类型"
+      },
+      {
+        "name": "TTL_BAL_SHIFT_ACPT",
+        "alias": "TTL_BAL_SHIFT_ACPT",
+        "context": "承兑余额汇总"
+      },
+      {
+        "name": "ACPT_AMT_TTL",
+        "alias": "ACPT_AMT_TTL",
+        "context": "承兑金额汇总"
+      },
+      {
+        "name": "CUST_TYPE_FLG",
+        "alias": "CUST_TYPE_FLG",
+        "context": "客户属性"
+      },
+      {
+        "name": "GTSBOC_CL_AMT",
+        "alias": "GTSBOC_CL_AMT",
+        "context": "额度总额"
+      },
+      {
+        "name": "CL_BANCS_RT_CYC_LC",
+        "alias": "CL_BANCS_RT_CYC_LC",
+        "context": "罚息结息周期"
+      },
+      {
+        "name": "APPL_TYPE",
+        "alias": "APPL_TYPE",
+        "context": "申请方式"
+      },
+      {
+        "name": "ISSUE_LC_FLAG",
+        "alias": "ISSUE_LC_FLAG",
+        "context": "开立标识"
+      },
+      {
+        "name": "RETURN_TSP",
+        "alias": "RETURN_TSP",
+        "context": "是否返回TSP"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "IMLC_MASTER"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "SPYO",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/SPYO.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "CP04_APPG_MODE STRING,CP04_APPG_DATE LONG,CP04_INST LONG,CP04_PAY_NO LONG,CP04_MSG_SEQ_NO LONG,CP04_PROS_FLAG STRING,CP04_SRC_SYS STRING,CP04_MSG_TYPE STRING,CP04_DSTN_SYS STRING,SPYO_BRANCH STRING,CP04_SPYO_VER STRING,DP04_VALU_DATE STRING,DP04_SEND_DATE STRING,CP04_SEND_TIME STRING,CP04_REJ_ERR_NO STRING,CP04_SUSP_FLAG STRING,CP04_SUSP_ACCT_NO LONG,CP04_SUSP_JRNLNO STRING,DP04_REJ_DATE STRING,CP04_REJ_TIME STRING,CP04_PAY_CURR STRING,CP04_PAY_AMT DOUBLE,CP04_EXTN_REF_NO STRING,CP04_CHAS_RETR STRING,CP04_CHAS_DEAD STRING,DP04_CHAS_DATE STRING,CP04_CHAS_TIME STRING,CP04_CHAS_ATMP STRING,CP04_CHAS_FREQ STRING,CP04_CHAS_UNIT STRING,CP04_ACCT_NO LONG,CP04_BENF_DETL STRING,CP04_TRAN_NO STRING,CP04_BTCH_ID STRING,CP04_NOST_ACCT_NO LONG,SPYO_MUR STRING,CP04_CYCLE_NO STRING,CP04_NOST_UPD_FLAG STRING,CP04_CR_DR_IND STRING,CP04_REMIT_TYPE STRING,CP04_CHANNEL_TYPE STRING,CP04_TO_ACCT_NO LONG,CP04_PAYMENT_TYPE STRING,CP04_FEE_TYPE STRING,CP04_FEE STRING,CP04_FISC_FEE STRING,CP04_CREDIT_CODE STRING,CP04_OUT_BANK_CODE2 STRING,CP04_OUT_SDN_CODE2 STRING,CP04_OUT_CHK_CODE2 STRING,CP04_IN_BANK_CODE2 STRING,CP04_IN_SDN_CODE2 STRING,CP04_IN_CHK_CODE2 STRING,CP04_FISC_SEQ STRING,CP04_INTERBANK_SEQ STRING,CP04_RETURN_REASON STRING,CP04_CHECK_NO STRING,CP04_ORG_REF_NO STRING,CP04_ORG_FISC_SEQ STRING,CP04_OUT_PRNT_TIMES STRING,CP04_IN_PRINT_TIMES STRING,CP04_TELLER_NO STRING,CP04_TELLER_TERM STRING,CP04_SPRVSR_NO STRING,CP04_SPRVSR_TERM STRING,CP04_SENDER_NAME STRING,CP04_RECEIVER_NAME STRING,CP04_SENDER_DESC STRING,CP04_APRV_JRNL_NO STRING,CP04_OLD_SUSP_JRNLNO STRING,CP04_SPRVSR2_NO STRING,DP04_RESTORED_DATE STRING,CP04_CB_RPT_STAT STRING,CP04_ORIG STRING,CP04_BUSINESS_NO STRING,CP04_REGION STRING,CP04_SUB_STATUS STRING,CP04_PRIORITY_WAIT LONG,CP04_ACK_NACK_STATUS STRING,CP04_STL_CASE_NO STRING,CP04_STL_TEMP_ID STRING,CP04_STL_INV_PURP STRING,CP04_REMIT_PROD STRING,CP04_RECEIPT_STAT STRING,CP04_RECEIPT_SUB_STAT STRING,CP04_MSG_DATA STRING,CP04_DEL_FLAG STRING,CP04_LAST_MAINT_DATE1 STRING,CP04_LAST_MAINT_FLAG1 STRING,ETL_DATE STRING,CP04_GPI_SERVICE_CODE STRING,CP04_GPI_NO STRING,CP04_GSRP_FLAG STRING,CP04_GSRP_CODE STRING,CP04_GSRP_SUB_CODE STRING,CP04_FIL01 STRING,CP04_DNF_FLAG LONG",
+    "filter": "",
+    "cols": [
+      {
+        "name": "CP04_APPG_MODE",
+        "alias": "CP04_APPG_MODE",
+        "context": "采集模式"
+      },
+      {
+        "name": "CP04_INST",
+        "alias": "CP04_INST",
+        "context": "机构号"
+      },
+      {
+        "name": "CP04_PAY_NO",
+        "alias": "CP04_PAY_NO",
+        "context": "汇款标识号"
+      },
+      {
+        "name": "CP04_MSG_SEQ_NO",
+        "alias": "CP04_MSG_SEQ_NO",
+        "context": "报文序列号"
+      },
+      {
+        "name": "CP04_PROS_FLAG",
+        "alias": "CP04_PROS_FLAG",
+        "context": "报文主状态"
+      },
+      {
+        "name": "CP04_SRC_SYS",
+        "alias": "CP04_SRC_SYS",
+        "context": "来源系统"
+      },
+      {
+        "name": "CP04_MSG_TYPE",
+        "alias": "CP04_MSG_TYPE",
+        "context": "报文类型"
+      },
+      {
+        "name": "SPYO_BRANCH",
+        "alias": "SPYO_BRANCH",
+        "context": "汇款机构号"
+      },
+      {
+        "name": "DP04_SEND_DATE",
+        "alias": "DP04_SEND_DATE",
+        "context": "发报日期"
+      },
+      {
+        "name": "CP04_SEND_TIME",
+        "alias": "CP04_SEND_TIME",
+        "context": "发报时间"
+      },
+      {
+        "name": "CP04_EXTN_REF_NO",
+        "alias": "CP04_EXTN_REF_NO",
+        "context": "外部参考号"
+      },
+      {
+        "name": "SPYO_MUR",
+        "alias": "SPYO_MUR",
+        "context": "未使用"
+      },
+      {
+        "name": "CP04_REMIT_TYPE",
+        "alias": "CP04_REMIT_TYPE",
+        "context": "汇款类型"
+      },
+      {
+        "name": "CP04_ORG_REF_NO",
+        "alias": "CP04_ORG_REF_NO",
+        "context": "原参考号"
+      },
+      {
+        "name": "CP04_BUSINESS_NO",
+        "alias": "CP04_BUSINESS_NO",
+        "context": "业务编号"
+      },
+      {
+        "name": "CP04_SUB_STATUS",
+        "alias": "CP04_SUB_STATUS",
+        "context": "子状态"
+      },
+      {
+        "name": "CP04_ACK_NACK_STATUS",
+        "alias": "CP04_ACK_NACK_STATUS",
+        "context": "未使用"
+      },
+      {
+        "name": "CP04_STL_CASE_NO",
+        "alias": "CP04_STL_CASE_NO",
+        "context": "查询NO"
+      },
+      {
+        "name": "CP04_GPI_NO",
+        "alias": "CP04_GPI_NO",
+        "context": "GPI唯一标识"
+      },
+      {
+        "name": "CP04_REMIT_PROD",
+        "alias": "CP04_REMIT_PROD",
+        "context": "汇款产品"
+      },
+      {
+        "name": "CP04_MSG_DATA",
+        "alias": "CP04_MSG_DATA",
+        "context": "原始报文"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "SPYO"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "SPYI",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/SPYI.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "CP03_APPG_MODE STRING,CP03_APPG_DATE LONG,CP03_INST STRING,CP03_PAY_NO STRING,CP03_MSG_SEQ_NO STRING,CP03_PROS_FLAG STRING,CP03_SRC_SYS STRING,CP03_MSG_TYPE STRING,CP03_DSTN_SYS STRING,CP03_SPYI_VER STRING,DP03_VALU_DATE STRING,DP03_RCPT_DATE STRING,CP03_RCPT_TIME STRING,CP03_REJ_ERR_NO STRING,CP03_SUSP_FLAG STRING,CP03_SUSP_ACCT_NO LONG,CP03_SUSP_JRNLNO STRING,DP03_REJ_DATE STRING,CP03_REJ_TIME STRING,CP03_PAY_CURR STRING,CP03_PAY_AMT DOUBLE,CP03_EXTN_REF_NO STRING,CP03_CHAS_RETR STRING,CP03_CHAS_DEAD STRING,DP03_CHAS_DATE STRING,CP03_CHAS_TIME STRING,CP03_CHAS_ATMP STRING,CP03_CHAS_FREQ STRING,CP03_CHAS_UNIT STRING,CP03_ACCT_NO LONG,CP03_BENF_DETL STRING,CP03_TRAN_NO LONG,CP03_BTCH_ID STRING,CP03_NOST_ACCT_NO LONG,CP03_MUR STRING,CP03_NOST_UPD_FLAG STRING,CP03_CR_DR_IND STRING,CP03_REMIT_TYPE STRING,CP03_CHANNEL_TYPE STRING,CP03_TO_ACCT_NO LONG,CP03_PAYMNT_TYPE STRING,CP03_FEE_TYPE STRING,CP03_SPYI_FEE STRING,CP03_FISC_FEE STRING,CP03_CREDIT_CODE STRING,CP03_OUT_BANK_CODE2 STRING,CP03_OUT_SPN_CODE2 STRING,CP03_OUT_CHK_CODE2 STRING,CP03_IN_BANK_CODE2 STRING,CP03_IN_SDN_CODE2 STRING,CP03_IN_CHK_CODE2 STRING,CP03_FISC_SEQ STRING,CP03_INTERBANK_SEQ STRING,CP03_RETURN_REASON STRING,CP03_ORG_REF_NO STRING,CP03_ORG_FISC_SEQ STRING,CP03_OUT_PRINT_TIME STRING,CP03_IN_PRINT_TIMES STRING,CP03_TELLER_NO STRING,CP03_TELLER_TERM STRING,CP03_SPRVSR_NO STRING,CP03_SPRVSR_TERM STRING,CP03_SENDER_NAME STRING,CP03_RECEIVER_NAME STRING,CP03_SENDER_DESC STRING,CP03_SPRVSR2_NO STRING,DP03_RESTORED_DATE STRING,DP03_SUSP_FIN_DATE STRING,CP03_ACCT_OWNER_REF_NO STRING,CP03_SUP_ID LONG,DP03_REL_DATE STRING,CP03_REL_TIME LONG,CP03_REDIR_FLAG STRING,CP03_REDIR_BANK_ID STRING,CP03_BUSINESS_NO STRING,CP03_REGION STRING,CP03_BRANCH STRING,CP03_SUB_STATUS STRING,CP03_URGENCY STRING,CP03_PRIORITY_WEIGHT LONG,CP03_RETURN_RSN STRING,CP03_PREV_STATUS STRING,CP03_STL_CASE_NO STRING,CP03_STL_TEMP_ID STRING,CP03_STL_INV_PURP STRING,CP03_FX_55067_PMCODE STRING,CP03_FX_SAFE_DEC STRING,CP03_FX_LOCAL_AMT DOUBLE,CP03_TRAN_DATE LONG,CP03_POST_DATE LONG,FILLER STRING,CP03_CR_CARD_NO STRING,CP03_TXN_DATE STRING,CP03_ENTRP_LEVEL STRING,CP03_GPI_NO STRING,CP03_33B_CURR STRING,CP03_33B_AMT DOUBLE,CP03_50_ACCT STRING,CP03_71F_CURR1 STRING,CP03_71F_AMT1 DOUBLE,CP03_71F_CURR2 STRING,CP03_71F_AMT2 DOUBLE,CP03_71F_CURR3 STRING,CP03_71F_AMT3 DOUBLE,CP03_71F_CURR4 STRING,CP03_71F_AMT4 DOUBLE,CP03_71F_CURR5 STRING,CP03_71F_AMT5 DOUBLE,CP03_REMIT_PROD STRING,CP03_BACK_STAT STRING,CP03_BACK_SUB_STAT STRING,CP03_TIMEST STRING,CP03_FIL02 STRING,CP03_DEL_FLAG STRING,LAST_MAINT_DATE1 STRING,LAST_MAINT_FLAG1 STRING,CP03_LIMIT_REFNO STRING,CP03_STATUS_FLAG STRING,ETL_DATE STRING,CP03_GPI_SERVICE_CODE STRING,CP03_DNF_FLAG LONG,CP03_FIL03 STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "CP03_APPG_DATE",
+        "alias": "CP03_APPG_DATE",
+        "context": "采集日期"
+      },
+      {
+        "name": "CP03_PAY_NO",
+        "alias": "CP03_PAY_NO",
+        "context": "汇款标识号"
+      },
+      {
+        "name": "CP03_MSG_SEQ_NO",
+        "alias": "CP03_MSG_SEQ_NO",
+        "context": "报文序列号"
+      },
+      {
+        "name": "CP03_PROS_FLAG",
+        "alias": "CP03_PROS_FLAG",
+        "context": "报文状态"
+      },
+      {
+        "name": "CP03_MSG_TYPE",
+        "alias": "CP03_MSG_TYPE",
+        "context": "报文类型"
+      },
+      {
+        "name": "DP03_RCPT_DATE",
+        "alias": "DP03_RCPT_DATE",
+        "context": "汇款接收日期"
+      },
+      {
+        "name": "CP03_RCPT_TIME",
+        "alias": "CP03_RCPT_TIME",
+        "context": "汇款接收时间"
+      },
+      {
+        "name": "CP03_EXTN_REF_NO",
+        "alias": "CP03_EXTN_REF_NO",
+        "context": "外部参考号"
+      },
+      {
+        "name": "CP03_MUR",
+        "alias": "CP03_MUR",
+        "context": "未使用"
+      },
+      {
+        "name": "CP03_TELLER_NO",
+        "alias": "CP03_TELLER_NO",
+        "context": "柜员号"
+      },
+      {
+        "name": "CP03_TELLER_TERM",
+        "alias": "CP03_TELLER_TERM",
+        "context": "处理汇款终端号"
+      },
+      {
+        "name": "CP03_BUSINESS_NO",
+        "alias": "CP03_BUSINESS_NO",
+        "context": "业务编号"
+      },
+      {
+        "name": "CP03_BRANCH",
+        "alias": "CP03_BRANCH",
+        "context": "机构号"
+      },
+      {
+        "name": "CP03_SUB_STATUS",
+        "alias": "CP03_SUB_STATUS",
+        "context": "子状态"
+      },
+      {
+        "name": "CP03_STL_CASE_NO",
+        "alias": "CP03_STL_CASE_NO",
+        "context": "查询NO"
+      },
+      {
+        "name": "CP03_POST_DATE",
+        "alias": "CP03_POST_DATE",
+        "context": "国际汇入汇款交易日期"
+      },
+      {
+        "name": "CP03_GPI_NO",
+        "alias": "CP03_GPI_NO",
+        "context": "GPI唯一标识"
+      },
+      {
+        "name": "CP03_REMIT_PROD",
+        "alias": "CP03_REMIT_PROD",
+        "context": "汇款产品"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "SPYI"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "IMCL_MASTER",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/IMCL_MASTER.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "APPG_MODE STRING,APPG_DATE STRING,C_MAIN_REF STRING,C_EVENT_TIME STRING,C_BK_GROUP_ID STRING,C_CUST_ID STRING,C_UNIT_CODE STRING,I_EVENT_TIMES LONG,C_RELE_BY STRING,D_RELE_DATE STRING,C_TRX_REF STRING,C_FUNC_SHORT_NAME STRING,C_TRX_STATUS STRING,C_EVENT_NAME STRING,C_LOCKED_FLAG STRING,C_LOCK_FUNC_ID STRING,D_SYS_OP_DATE STRING,T_SYS_OP_TIME STRING,D_SYS_REL_DATE STRING,T_SYS_REL_TIME STRING,D_CREA_DATE STRING,I_CANCEL_ETIMES LONG,C_NOW_EVENT STRING,C_USER_ID STRING,C_CP_UNIT_CODE STRING,C_MODULE STRING,C_LOCKED_OP STRING,D_SVR_GMT STRING,T_SVR_GMT STRING,D_OP_DATE STRING,D_SYS_CREA_DATE STRING,T_SYS_CREA_TIME STRING,TRADE_TYPE STRING,VIP_LEVEL STRING,CL_FLG STRING,CLOSE_DT STRING,UNPAID_DT STRING,EVENT_TYPE STRING,MRGN_AC_NO1 STRING,MRGN_AC_NO2 STRING,MRGN_BAL1 DOUBLE,MRGN_AC_NO3 STRING,MRGN_BAL3 DOUBLE,MRGN_BAL2 DOUBLE,MRGN_EQ_BAL DOUBLE,SEND_VIA STRING,CL_PCT DOUBLE,CL_AMT DOUBLE,CLERK_REMARK STRING,MRGN_PCT DOUBLE,CONTRACT_NO STRING,OUR_AC_BK_ID STRING,TENOR_DAYS LONG,COMMODITY STRING,TENOR_TYPE STRING,OUR_AC_BK_NM_ADD STRING,OUR_AC_NO STRING,OUR_AC_BK_NM STRING,DRAFT_AMT DOUBLE,INV_NO STRING,ORIGIN_CERT STRING,BL STRING,DRAFT STRING,BENE_CERT STRING,DRAWEE_ID STRING,DRAWEE_NM_ADD STRING,UNPMT_DT STRING,NEW_DUE_DT STRING,TAG_58A STRING,PACK_LIST STRING,EXTEN_DT STRING,SW_56A_ID STRING,SW_57A_NM_ADD STRING,ACPT_DT STRING,SW_58A_ID STRING,INVOICE STRING,TTL_CONTRACT_AMT DOUBLE,RET_DOC_FLG STRING,CNTY_FLG STRING,SW_57A_ID STRING,TAG_57A STRING,INSURANCE_POLICY STRING,ACPT_AMT DOUBLE,SW_56A_AC_NO STRING,SW_58A_AC_NO STRING,SW_57A_AC_NO STRING,CABLE_COPY STRING,RET_DRAFT_FLG STRING,SW_56A_NM_ADD STRING,SW_58A_NM_ADD STRING,AB_DT STRING,PMT_BAL DOUBLE,TAG_56A STRING,MRGN_CCY2 STRING,MRGN_EQ_BAL1 DOUBLE,TTL_EXCH_RISK_AMT DOUBLE,MRGN_EQ_BAL3 DOUBLE,MRGN_CCY3 STRING,MORTGAGE_AMT DOUBLE,MORTGAGE_PCT DOUBLE,MORTGAGE_FLG STRING,MRGN_CCY1 STRING,MRGN_EQ_BAL2 DOUBLE,BL_NO4 STRING,INV_AMT4 DOUBLE,INV_AMT1 DOUBLE,BL_NO2 STRING,BL_NO3 STRING,BL_NO1 STRING,MAIL_DT STRING,INV_AMT3 DOUBLE,BL_NO5 STRING,INV_AMT5 DOUBLE,PACKING_LIST_NO STRING,INV_AMT2 DOUBLE,OTHER_REMARK STRING,BL_NO STRING,PMT_DT STRING,AGREE_NO STRING,PMT_AMT DOUBLE,TO_WHOM_NM STRING,OTHER_DOC STRING,QUAL_LERT STRING,INSP_LERT STRING,QUAN_LERT STRING,LADING_BL STRING,FIVE_LEVEL_FLAG STRING,BRANCH_REMARK STRING,REFUND_DOC STRING,GTS_BR_ID STRING,GTS_BR_NM STRING,MRGN_EQ_AMT_PURE DOUBLE,TRM_CHG_AMT DOUBLE,DB_CCY STRING,DRAFT_CCY STRING,PMT_TERMS STRING,SW_57A_ID_SW STRING,SURETY_FLG STRING,ORDER_BY STRING,COLL_BK_REF_NO STRING,REMIT_BK_CHG_FLG STRING,COLL_BK_NM_ADD STRING,TRACER_FLG STRING,STARTING_DT STRING,REMIT_BK_ID_SW STRING,DOCS_PRESENTER STRING,TRACER_TIMES LONG,FAVOR_FLAG STRING,TRANS_AMT DOUBLE,MIN_MARGIN_PCT DOUBLE,OUR_AC_BK_ID_SW STRING,AB2_DT STRING,MATURITY_DT STRING,SW_ACK_FLG STRING,COLL_BK_ID_SW STRING,SW_72_NARRITIVE STRING,TRM_BK_ID_SW STRING,FORM_FLG STRING,NEXT_TRACER_DT STRING,REMIT_BK_ID STRING,PRV_IC_BAL DOUBLE,COLL_BK_NM STRING,COLL_BK_ID STRING,FAVOR_REMARK STRING,SW_56A_ID_SW STRING,TRM_BK_NM_ADD STRING,SW_58A_ID_SW STRING,DOCS_TYPE STRING,REMIT_BK_NM_ADD STRING,TRM_BK_ID STRING,REMIT_BK_REF_NO STRING,DLY_PMT_RT DOUBLE,RET_REL_TRM_FLG STRING,TRM_BK_REF_NO STRING,DB_AMT DOUBLE,REMIT_BK_CHG DOUBLE,LAST_TRACER_DT STRING,REP_DOC_FLAG STRING,COLL_BK_CHG DOUBLE,AMD_REMARK STRING,INV_BL_NO1 STRING,INV_BL_NO2 STRING,INV_BL_NO3 STRING,INV_BL_NO4 STRING,INV_BL_NO5 STRING,FOR_CUSTOM_FLG STRING,GTS_PRVN_ID STRING,TENOR_TYPE_V STRING,DRAFT_AMT_BAL DOUBLE,FINC_REF_NO STRING,DRAWER_NM_ADD STRING,COLL_BK_CHG_FLG STRING,DRAWEE_NM STRING,PRE_DRAFT_BAL DOUBLE,RESUME_CLOSE_DT STRING,PMT_EQ_AMT DOUBLE,EXCH_RT DOUBLE,PMT_CCY STRING,PMT_TIMES LONG,FINC_REF_NO_O STRING,PRE_DRAFT STRING,PRE_INVOICE STRING,PRE_BL_AWB STRING,PRE_NN_BL STRING,PRE_PACK_LIST STRING,PRE_INSUR_POL STRING,PRE_INSP_CERT STRING,PRE_QUAN_LERT STRING,PRE_C_QUT STRING,PRE_ORIGIN_CERT STRING,PRE_BENE_CERT STRING,PRE_CABLE_COPY STRING,PRE_OTHER_DOCS STRING,CHG_BY_IM STRING,CHG_MTHD_IM STRING,TRANS_BILL_DT STRING,PRE_DRAFT_CCY STRING,PRE_DRAFT_AMT DOUBLE,PRE_PMT_TERM STRING,DOC_TYPE_ACPT STRING,PRES_BK_NM_ADD STRING,PRES_BK_ID STRING,PRES_BK_ID_SW STRING,PRE_SURETY_FLAG STRING,PRODUCT_CODE STRING,PRODUCT_CODE_SG STRING,RET_DOC_FLAG STRING,AGREE_NO_O STRING,GTS_DISTRICT_CODE STRING,MRGN_RISK_AMT1 DOUBLE,MRGN_RISK_AMT2 DOUBLE,MRGN_RISK_AMT3 DOUBLE,SW_58A_NM STRING,DEAL_PMT_DT STRING,DEAL_EXT_DT STRING,REMIT_BK_NM STRING,TRM_BK_NM STRING,BLACK_DATA_TYPE STRING,BLACK_TRX_TYPE STRING,NEGO_PMTCCY_CHG DOUBLE,OVERS_BK_ID_SW STRING,OVERS_BK_ID STRING,OVERS_BK_ID_NM STRING,OVERS_BK_ID_NMADD STRING,PRODUCT_CODE_DB STRING,GL_PROD_CODE STRING,GL_PROD_CODE_DB STRING,GL_PROD_CODE_SG STRING,FINC_TIMES LONG,C_LOCKED_BU STRING,OVERS_AGREE_DATE STRING,AGREE_NO_O2 STRING,UNPMT_UNACPT_RESN STRING,UNIT_TYPE STRING,CUST_NEW_TYPE STRING,GTS_VCH_ID STRING,GTS_VCH_NM STRING,CUST_TYPE_FLG STRING,CL_PRDT_REF STRING,CL_PRDT_NM STRING,COLL_BK_ID_SW_ACPT STRING,COLL_BK_NM_ADD_ACPT STRING,COLL_BK_REF_NO_ACPT STRING,COLL_BK_ID_ACPT STRING,TTL_YHF_PMT_AMT DOUBLE,TTL_CGL_NUM LONG,TTL_CGL_AMT DOUBLE,TTL_BGL_NUM LONG,TTL_BGL_AMT DOUBLE,BGL_AC_NO STRING,TTL_FINC_EQ_BAL DOUBLE,TTL_AFTER_FINC_EQ_BAL DOUBLE,FINC_TIMES_OUR LONG,TTL_FINC_EQ_AMT_OUR DOUBLE,TTL_FINC_EQ_BAL_OUR DOUBLE,FINC_TIMES_RF LONG,TTL_FINC_EQ_AMT_RF DOUBLE,TTL_FINC_EQ_BAL_RF DOUBLE,REFINC_FLG STRING,EXCH_FLG STRING,TTL_DZX_AMT_ISSUE STRING,TTL_YZX_AMT_ISSUE DOUBLE,TTL_YHF_AMT_ISSUE DOUBLE,TTL_FINC_EQ_AMT_LD DOUBLE,ETL_DATE STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "C_MAIN_REF",
+        "alias": "C_MAIN_REF",
+        "context": "主流水号"
+      },
+      {
+        "name": "C_UNIT_CODE",
+        "alias": "C_UNIT_CODE",
+        "context": "机构号"
+      },
+      {
+        "name": "I_EVENT_TIMES",
+        "alias": "I_EVENT_TIMES",
+        "context": "交易次数"
+      },
+      {
+        "name": "C_TRX_REF",
+        "alias": "C_TRX_REF",
+        "context": "二级流水号"
+      },
+      {
+        "name": "C_TRX_STATUS",
+        "alias": "C_TRX_STATUS",
+        "context": "交易状态"
+      },
+      {
+        "name": "C_CP_UNIT_CODE",
+        "alias": "C_CP_UNIT_CODE",
+        "context": "中心机构号"
+      },
+      {
+        "name": "D_OP_DATE",
+        "alias": "D_OP_DATE",
+        "context": "经办更新日期"
+      },
+      {
+        "name": "TRADE_TYPE",
+        "alias": "TRADE_TYPE",
+        "context": "贸易类型"
+      },
+      {
+        "name": "VIP_LEVEL",
+        "alias": "VIP_LEVEL",
+        "context": "客户VIP级别"
+      },
+      {
+        "name": "CL_FLG",
+        "alias": "CL_FLG",
+        "context": "授信类型"
+      },
+      {
+        "name": "MRGN_BAL1",
+        "alias": "MRGN_BAL1",
+        "context": "保证金余额"
+      },
+      {
+        "name": "MRGN_BAL3",
+        "alias": "MRGN_BAL3",
+        "context": "保证金余额"
+      },
+      {
+        "name": "MRGN_BAL2",
+        "alias": "MRGN_BAL2",
+        "context": "保证金余额"
+      },
+      {
+        "name": "MRGN_EQ_BAL",
+        "alias": "MRGN_EQ_BAL",
+        "context": "保证金折交易币别余额"
+      },
+      {
+        "name": "SEND_VIA",
+        "alias": "SEND_VIA",
+        "context": "发报方式"
+      },
+      {
+        "name": "CL_PCT",
+        "alias": "CL_PCT",
+        "context": "额度比例"
+      },
+      {
+        "name": "CL_AMT",
+        "alias": "CL_AMT",
+        "context": "额度金额"
+      },
+      {
+        "name": "MRGN_PCT",
+        "alias": "MRGN_PCT",
+        "context": "保证金比例"
+      },
+      {
+        "name": "CONTRACT_NO",
+        "alias": "CONTRACT_NO",
+        "context": "合同号"
+      },
+      {
+        "name": "OUR_AC_BK_ID",
+        "alias": "OUR_AC_BK_ID",
+        "context": "我行帐户行的ID号"
+      },
+      {
+        "name": "COMMODITY",
+        "alias": "COMMODITY",
+        "context": "商品类别"
+      },
+      {
+        "name": "TENOR_TYPE",
+        "alias": "TENOR_TYPE",
+        "context": "交单期限计算方式"
+      },
+      {
+        "name": "OUR_AC_NO",
+        "alias": "OUR_AC_NO",
+        "context": "帐户行账号"
+      },
+      {
+        "name": "OUR_AC_BK_NM",
+        "alias": "OUR_AC_BK_NM",
+        "context": "帐户行名称"
+      },
+      {
+        "name": "DRAFT_AMT",
+        "alias": "DRAFT_AMT",
+        "context": "汇票金额"
+      },
+      {
+        "name": "DRAFT",
+        "alias": "DRAFT",
+        "context": "汇票份数"
+      },
+      {
+        "name": "DRAWEE_ID",
+        "alias": "DRAWEE_ID",
+        "context": "付款人ID"
+      },
+      {
+        "name": "TAG_58A",
+        "alias": "TAG_58A",
+        "context": "收款行TAG"
+      },
+      {
+        "name": "EXTEN_DT",
+        "alias": "EXTEN_DT",
+        "context": "展期日期"
+      },
+      {
+        "name": "ACPT_DT",
+        "alias": "ACPT_DT",
+        "context": "承兑日"
+      },
+      {
+        "name": "TTL_CONTRACT_AMT",
+        "alias": "TTL_CONTRACT_AMT",
+        "context": "合同总金额"
+      },
+      {
+        "name": "RET_DOC_FLG",
+        "alias": "RET_DOC_FLG",
+        "context": "退单标识"
+      },
+      {
+        "name": "CNTY_FLG",
+        "alias": "CNTY_FLG",
+        "context": "境内外标识"
+      },
+      {
+        "name": "TAG_57A",
+        "alias": "TAG_57A",
+        "context": "账户行TAG"
+      },
+      {
+        "name": "RET_DRAFT_FLG",
+        "alias": "RET_DRAFT_FLG",
+        "context": "是否退汇票标识"
+      },
+      {
+        "name": "TAG_56A",
+        "alias": "TAG_56A",
+        "context": "中间行TAG"
+      },
+      {
+        "name": "MRGN_CCY2",
+        "alias": "MRGN_CCY2",
+        "context": "保证金币别"
+      },
+      {
+        "name": "MRGN_EQ_BAL1",
+        "alias": "MRGN_EQ_BAL1",
+        "context": "保证金折交易币别余额"
+      },
+      {
+        "name": "TTL_EXCH_RISK_AMT",
+        "alias": "TTL_EXCH_RISK_AMT",
+        "context": "总的汇率风险金额"
+      },
+      {
+        "name": "MRGN_EQ_BAL3",
+        "alias": "MRGN_EQ_BAL3",
+        "context": "保证金折交易币别余额"
+      },
+      {
+        "name": "MORTGAGE_AMT",
+        "alias": "MORTGAGE_AMT",
+        "context": "抵押金额"
+      },
+      {
+        "name": "MORTGAGE_PCT",
+        "alias": "MORTGAGE_PCT",
+        "context": "抵押比例"
+      },
+      {
+        "name": "MORTGAGE_FLG",
+        "alias": "MORTGAGE_FLG",
+        "context": "抵押方式"
+      },
+      {
+        "name": "MRGN_CCY1",
+        "alias": "MRGN_CCY1",
+        "context": "保证金币别"
+      },
+      {
+        "name": "MRGN_EQ_BAL2",
+        "alias": "MRGN_EQ_BAL2",
+        "context": "保证金折交易币别余额"
+      },
+      {
+        "name": "PACKING_LIST_NO",
+        "alias": "PACKING_LIST_NO",
+        "context": "装箱单号"
+      },
+      {
+        "name": "BL_NO",
+        "alias": "BL_NO",
+        "context": "运输单编号"
+      },
+      {
+        "name": "PMT_DT",
+        "alias": "PMT_DT",
+        "context": "付款日"
+      },
+      {
+        "name": "FIVE_LEVEL_FLAG",
+        "alias": "FIVE_LEVEL_FLAG",
+        "context": "五级分类标识"
+      },
+      {
+        "name": "GTS_BR_ID",
+        "alias": "GTS_BR_ID",
+        "context": "所属网点ID"
+      },
+      {
+        "name": "GTS_BR_NM",
+        "alias": "GTS_BR_NM",
+        "context": "所属网点名称"
+      },
+      {
+        "name": "MRGN_EQ_AMT_PURE",
+        "alias": "MRGN_EQ_AMT_PURE",
+        "context": "额度金额"
+      },
+      {
+        "name": "PMT_TERMS",
+        "alias": "PMT_TERMS",
+        "context": "交单条件"
+      },
+      {
+        "name": "SW_57A_ID_SW",
+        "alias": "SW_57A_ID_SW",
+        "context": "账户行ID"
+      },
+      {
+        "name": "SURETY_FLG",
+        "alias": "SURETY_FLG",
+        "context": "担保标识"
+      },
+      {
+        "name": "COLL_BK_REF_NO",
+        "alias": "COLL_BK_REF_NO",
+        "context": "托收行业务编号"
+      },
+      {
+        "name": "REMIT_BK_CHG_FLG",
+        "alias": "REMIT_BK_CHG_FLG",
+        "context": "托收行费用可否放弃标识"
+      },
+      {
+        "name": "TRACER_FLG",
+        "alias": "TRACER_FLG",
+        "context": "催收标识"
+      },
+      {
+        "name": "REMIT_BK_ID_SW",
+        "alias": "REMIT_BK_ID_SW",
+        "context": "偿付行ID"
+      },
+      {
+        "name": "FAVOR_FLAG",
+        "alias": "FAVOR_FLAG",
+        "context": "三率优惠标识"
+      },
+      {
+        "name": "TRANS_AMT",
+        "alias": "TRANS_AMT",
+        "context": "交易金额"
+      },
+      {
+        "name": "MIN_MARGIN_PCT",
+        "alias": "MIN_MARGIN_PCT",
+        "context": "保证金最小比例"
+      },
+      {
+        "name": "OUR_AC_BK_ID_SW",
+        "alias": "OUR_AC_BK_ID_SW",
+        "context": "我行帐户行的BIC CODE"
+      },
+      {
+        "name": "SW_ACK_FLG",
+        "alias": "SW_ACK_FLG",
+        "context": "是否发确认收到函/电标识"
+      },
+      {
+        "name": "FORM_FLG",
+        "alias": "FORM_FLG",
+        "context": "确认函/电的形式"
+      },
+      {
+        "name": "NEXT_TRACER_DT",
+        "alias": "NEXT_TRACER_DT",
+        "context": "下一催承催付日"
+      },
+      {
+        "name": "PRV_IC_BAL",
+        "alias": "PRV_IC_BAL",
+        "context": "上次余额"
+      },
+      {
+        "name": "COLL_BK_NM",
+        "alias": "COLL_BK_NM",
+        "context": "托收行名称"
+      },
+      {
+        "name": "COLL_BK_ID",
+        "alias": "COLL_BK_ID",
+        "context": "托收行ID"
+      },
+      {
+        "name": "SW_56A_ID_SW",
+        "alias": "SW_56A_ID_SW",
+        "context": "中间行ID"
+      },
+      {
+        "name": "SW_58A_ID_SW",
+        "alias": "SW_58A_ID_SW",
+        "context": "收款行ID"
+      },
+      {
+        "name": "DOCS_TYPE",
+        "alias": "DOCS_TYPE",
+        "context": "单据类型"
+      },
+      {
+        "name": "TRM_BK_ID",
+        "alias": "TRM_BK_ID",
+        "context": "转递行ID"
+      },
+      {
+        "name": "REMIT_BK_REF_NO",
+        "alias": "REMIT_BK_REF_NO",
+        "context": "偿付行业务编号"
+      },
+      {
+        "name": "RET_REL_TRM_FLG",
+        "alias": "RET_REL_TRM_FLG",
+        "context": "退/放/转单标识"
+      },
+      {
+        "name": "LAST_TRACER_DT",
+        "alias": "LAST_TRACER_DT",
+        "context": "上次催承催付日"
+      },
+      {
+        "name": "REP_DOC_FLAG",
+        "alias": "REP_DOC_FLAG",
+        "context": "是否替换单据标识"
+      },
+      {
+        "name": "COLL_BK_CHG",
+        "alias": "COLL_BK_CHG",
+        "context": "托收行费用"
+      },
+      {
+        "name": "GTS_PRVN_ID",
+        "alias": "GTS_PRVN_ID",
+        "context": "网点所属省行ID"
+      },
+      {
+        "name": "TENOR_TYPE_V",
+        "alias": "TENOR_TYPE_V",
+        "context": "信用证期限类型"
+      },
+      {
+        "name": "DRAFT_AMT_BAL",
+        "alias": "DRAFT_AMT_BAL",
+        "context": "托收余额"
+      },
+      {
+        "name": "COLL_BK_CHG_FLG",
+        "alias": "COLL_BK_CHG_FLG",
+        "context": "议付标识"
+      },
+      {
+        "name": "PMT_EQ_AMT",
+        "alias": "PMT_EQ_AMT",
+        "context": "付款金额"
+      },
+      {
+        "name": "EXCH_RT",
+        "alias": "EXCH_RT",
+        "context": "汇率"
+      },
+      {
+        "name": "PMT_CCY",
+        "alias": "PMT_CCY",
+        "context": "付款币别"
+      },
+      {
+        "name": "PMT_TIMES",
+        "alias": "PMT_TIMES",
+        "context": "付款次数"
+      },
+      {
+        "name": "CHG_MTHD_IM",
+        "alias": "CHG_MTHD_IM",
+        "context": "申请方式"
+      },
+      {
+        "name": "PRE_DRAFT_CCY",
+        "alias": "PRE_DRAFT_CCY",
+        "context": "上一步汇票币别"
+      },
+      {
+        "name": "DOC_TYPE_ACPT",
+        "alias": "DOC_TYPE_ACPT",
+        "context": "承兑类型"
+      },
+      {
+        "name": "PRODUCT_CODE",
+        "alias": "PRODUCT_CODE",
+        "context": "产品码"
+      },
+      {
+        "name": "DEAL_PMT_DT",
+        "alias": "DEAL_PMT_DT",
+        "context": "还款日期"
+      },
+      {
+        "name": "DEAL_EXT_DT",
+        "alias": "DEAL_EXT_DT",
+        "context": "展期日期"
+      },
+      {
+        "name": "BLACK_DATA_TYPE",
+        "alias": "BLACK_DATA_TYPE",
+        "context": "黑名单数据类型"
+      },
+      {
+        "name": "BLACK_TRX_TYPE",
+        "alias": "BLACK_TRX_TYPE",
+        "context": "黑名单交易类型"
+      },
+      {
+        "name": "NEGO_PMTCCY_CHG",
+        "alias": "NEGO_PMTCCY_CHG",
+        "context": "议付行费用"
+      },
+      {
+        "name": "OVERS_BK_ID_SW",
+        "alias": "OVERS_BK_ID_SW",
+        "context": "海外行BIC CODE"
+      },
+      {
+        "name": "OVERS_BK_ID",
+        "alias": "OVERS_BK_ID",
+        "context": "海外行ID"
+      },
+      {
+        "name": "OVERS_BK_ID_NM",
+        "alias": "OVERS_BK_ID_NM",
+        "context": "海外行名称"
+      },
+      {
+        "name": "GL_PROD_CODE",
+        "alias": "GL_PROD_CODE",
+        "context": "总帐用产品码"
+      },
+      {
+        "name": "GL_PROD_CODE_DB",
+        "alias": "GL_PROD_CODE_DB",
+        "context": "总帐用DB产品码"
+      },
+      {
+        "name": "GL_PROD_CODE_SG",
+        "alias": "GL_PROD_CODE_SG",
+        "context": "总帐用SG产品码"
+      },
+      {
+        "name": "FINC_TIMES",
+        "alias": "FINC_TIMES",
+        "context": "押汇次数"
+      },
+      {
+        "name": "OVERS_AGREE_DATE",
+        "alias": "OVERS_AGREE_DATE",
+        "context": "海外协议签署日"
+      },
+      {
+        "name": "AGREE_NO_O2",
+        "alias": "AGREE_NO_O2",
+        "context": "海外融资协议编号"
+      },
+      {
+        "name": "UNPMT_UNACPT_RESN",
+        "alias": "UNPMT_UNACPT_RESN",
+        "context": "拒付/拒承原因"
+      },
+      {
+        "name": "UNIT_TYPE",
+        "alias": "UNIT_TYPE",
+        "context": "机构属性"
+      },
+      {
+        "name": "CUST_TYPE_FLG",
+        "alias": "CUST_TYPE_FLG",
+        "context": "客户属性"
+      },
+      {
+        "name": "COLL_BK_ID_ACPT",
+        "alias": "COLL_BK_ID_ACPT",
+        "context": "交单行ID（承兑）"
+      },
+      {
+        "name": "TTL_CGL_NUM",
+        "alias": "TTL_CGL_NUM",
+        "context": "CGL总笔数"
+      },
+      {
+        "name": "TTL_CGL_AMT",
+        "alias": "TTL_CGL_AMT",
+        "context": "CGL总额"
+      },
+      {
+        "name": "TTL_BGL_NUM",
+        "alias": "TTL_BGL_NUM",
+        "context": "BGL总笔数"
+      },
+      {
+        "name": "TTL_BGL_AMT",
+        "alias": "TTL_BGL_AMT",
+        "context": "BGL总额(折付款币别)"
+      },
+      {
+        "name": "REFINC_FLG",
+        "alias": "REFINC_FLG",
+        "context": "非我行资金融资全额/部分标识"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "IMCL_MASTER"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "DADV",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/DADV.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "OA20_APPG_MODE STRING,OA20_APPG_DATE LONG,OA20_INST_NO STRING,OA20_PAY_NO STRING,OA20_DR_ACCT_NO STRING,OA20_DR_TXN_DATE STRING,OA20_JRNL_NO LONG,OA20_BR_NO STRING,OA20_TELLER_NO STRING,OA20_SPRVSR_NO STRING,OA20_BUSINESS_NO STRING,OA20_BR_NAME STRING,OA20_TAG50_ACT_NO STRING,OA20_DR_ACCT_NAME STRING,OA20_DR_ACCT_ADD1 STRING,OA20_DR_ACCT_ADD2 STRING,OA20_REM_CUR STRING,OA20_REM_AMT DOUBLE,OA20_EX_RATE_BUY DOUBLE,OA20_EX_RATE_SEL DOUBLE,OA20_DR_CUR STRING,OA20_DR_AMT DOUBLE,OA20_DR_CHQ_NO STRING,OA20_DD_DRAFT_NO STRING,OA20_WARRANT_NO STRING,OA20_PAY_DTLS STRING,OA20_REF_NO STRING,OA20_BASE_EQUIV DOUBLE,OA20_BEN_ACCT_NO STRING,OA20_BEN_NAME STRING,OA20_BEN_ADD1 STRING,OA20_BEN_ADD2 STRING,OA20_ORD_CUST_NAME STRING,OA20_ORD_CUST_ADD1 STRING,OA20_ORD_CUST_ADD2 STRING,OA20_BENE_BANK STRING,OA20_CHRG_CUR STRING,OA20_CABLE_FEE DOUBLE,OA20_COMM_FEE DOUBLE,OA20_BS_DIFF_FEE DOUBLE,OA20_NON_FX_FEE DOUBLE,OA20_REDIRECT_FEE DOUBLE,OA20_INVEST_FEE DOUBLE,OA20_RTN_REM_FEE DOUBLE,OA20_LOSS_STOP_FEE DOUBLE,OA20_WARR_PURC_FEE DOUBLE,OA20_OTH_FEE DOUBLE,OA20_SAFE_NO STRING,OA20_CHRG_FLAG STRING,OA20_PYMT_MODE STRING,OA20_PRINT_FLAG STRING,OA20_ADVICE_TYPE STRING,OA20_SUB_BUSI_TYPE STRING,OA20_BASE_BUY_RATE DOUBLE,OA20_BASE_SELL_RATE DOUBLE,OA20_OTHER_AMOUNT_FLAG STRING,OA20_OTHER_AMOUNT_CURR STRING,OA20_OTHER_AMOUNT DOUBLE,OA20_RESERVE_FIELD1 STRING,OA20_RESERVE_FIELD2 STRING,OA20_CUST_NO STRING,OA20_CUST_TYPE STRING,ETL_DATE STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "OA20_APPG_DATE",
+        "alias": "OA20_APPG_DATE",
+        "context": "采集日期"
+      },
+      {
+        "name": "OA20_PAY_NO",
+        "alias": "OA20_PAY_NO",
+        "context": "报文序列号"
+      },
+      {
+        "name": "OA20_DR_ACCT_NO",
+        "alias": "OA20_DR_ACCT_NO",
+        "context": "贷记账号"
+      },
+      {
+        "name": "OA20_DR_TXN_DATE",
+        "alias": "OA20_DR_TXN_DATE",
+        "context": "贷记交易日期"
+      },
+      {
+        "name": "OA20_JRNL_NO",
+        "alias": "OA20_JRNL_NO",
+        "context": "日志号"
+      },
+      {
+        "name": "OA20_TELLER_NO",
+        "alias": "OA20_TELLER_NO",
+        "context": "交易柜员"
+      },
+      {
+        "name": "OA20_SPRVSR_NO",
+        "alias": "OA20_SPRVSR_NO",
+        "context": "复核柜员"
+      },
+      {
+        "name": "OA20_BUSINESS_NO",
+        "alias": "OA20_BUSINESS_NO",
+        "context": "业务编号"
+      },
+      {
+        "name": "OA20_BR_NAME",
+        "alias": "OA20_BR_NAME",
+        "context": "分行名称"
+      },
+      {
+        "name": "OA20_DR_ACCT_NAME",
+        "alias": "OA20_DR_ACCT_NAME",
+        "context": "贷记账户名称"
+      },
+      {
+        "name": "OA20_DR_CUR",
+        "alias": "OA20_DR_CUR",
+        "context": "贷记币种"
+      },
+      {
+        "name": "OA20_DR_AMT",
+        "alias": "OA20_DR_AMT",
+        "context": "贷记金额"
+      },
+      {
+        "name": "OA20_SAFE_NO",
+        "alias": "OA20_SAFE_NO",
+        "context": "申报号"
+      },
+      {
+        "name": "OA20_CHRG_FLAG",
+        "alias": "OA20_CHRG_FLAG",
+        "context": "收费标示"
+      },
+      {
+        "name": "OA20_SUB_BUSI_TYPE",
+        "alias": "OA20_SUB_BUSI_TYPE",
+        "context": "业务类型子类"
+      },
+      {
+        "name": "OA20_CUST_NO",
+        "alias": "OA20_CUST_NO",
+        "context": "客户号"
+      },
+      {
+        "name": "OA20_CUST_TYPE",
+        "alias": "OA20_CUST_TYPE",
+        "context": "客户类型"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "DADV"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "SPNF",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/SPNF.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "CL24_APPG_MODE STRING,CL24_APPG_DATE LONG,OL24_INST_NO STRING,OL24_PAY_NO STRING,OL24_BUSINESS_NO STRING,OL24_EXTN_REF_NO STRING,OL24_RETURN_REASON STRING,OL24_STAY_INFO STRING,OL24_STAY_REASON STRING,OL24_CUST_TYPE STRING,OL24_PAY_AMT DOUBLE,OL24_PAY_CURR STRING,OL24_ID_TYPE STRING,OL24_ID_NO STRING,OL24_BUSINESS_CODE STRING,OL24_STAT_NO LONG,OL24_CASH_STAT_NO LONG,OL24_DEPT_NO STRING,OL24_NOTIFY_DT_1 LONG,OL24_NOTIFY_REMARK_1 STRING,OL24_NOTIFY_DT_2 LONG,OL24_NOTIFY_REMARK_2 STRING,OL24_NOTIFY_DT_3 LONG,OL24_NOTIFY_REMARK_3 STRING,OL24_NOTIFY_DT_4 LONG,OL24_NOTIFY_REMARK_4 STRING,OL24_NOTIFY_DT_5 LONG,OL24_NOTIFY_REMARK_5 STRING,LAST_MAINT_DATE1 STRING,LAST_MAINT_FLAG1 STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "OL24_PAY_NO",
+        "alias": "OL24_PAY_NO",
+        "context": "报文序列号"
+      },
+      {
+        "name": "OL24_BUSINESS_NO",
+        "alias": "OL24_BUSINESS_NO",
+        "context": "业务编号"
+      },
+      {
+        "name": "OL24_RETURN_REASON",
+        "alias": "OL24_RETURN_REASON",
+        "context": "退报原因"
+      },
+      {
+        "name": "OL24_STAY_INFO",
+        "alias": "OL24_STAY_INFO",
+        "context": "留交信息"
+      },
+      {
+        "name": "OL24_STAY_REASON",
+        "alias": "OL24_STAY_REASON",
+        "context": "留交原因"
+      },
+      {
+        "name": "OL24_BUSINESS_CODE",
+        "alias": "OL24_BUSINESS_CODE",
+        "context": "\"贸易类型 1 :贸易, 2: 非贸易,3:对公资本，4：头寸清算\""
+      },
+      {
+        "name": "OL24_STAT_NO",
+        "alias": "OL24_STAT_NO",
+        "context": "结售汇统计码"
+      },
+      {
+        "name": "OL24_CASH_STAT_NO",
+        "alias": "OL24_CASH_STAT_NO",
+        "context": "现金统计码"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "SPNF"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  },
+  {
+    "tb_name": "SWF2",
+    "file_type": "orc",
+    "file_sep": " \\| ",
+    "file_path": "/oramis/dt/SWF2.txt.dt",
+    "header": false,
+    "interSchema": false,
+    "options": "",
+    "url": "",
+    "jdbc_tb_name": "",
+    "jdbc_username": "",
+    "jdbc_password": "",
+    "schema": "CP05_APPG_MODE STRING,CP05_APPG_DATE LONG,CP05_INST_NO STRING,CP05_BRANCH_NO STRING,CP05_POST_DATE LONG,CP05_REFERENCE STRING,CP05_T13_OPTION STRING,CP05_T13C_CODE STRING,CP05_T13C_TIME LONG,CP05_T13C_SIGN STRING,CP05_T13C_OFFSET LONG,CP05_T23_OPTION STRING,CP05_T23B_CODE STRING,CP05_T23B_VALUE STRING,CP05_T23B_FFORM STRING,CP05_T26_OPTION STRING,CP05_T26T_CODE STRING,CP05_T33_OPTION STRING,CP05_T33B_CURR STRING,CP05_T33B_AMOUNT DOUBLE,CP05_T36_AMOUNT DOUBLE,CP05_T51_OPTION STRING,CP05_T51_BYTE1 STRING,CP05_T51_BYTE2 STRING,CP05_T55_OPTION STRING,CP05_T55_BYTE1 STRING,CP05_T55_BYTE2 STRING,CP05_T55_BYTE3 STRING,CP05_T55_BYTE4 STRING,CP05_T55_BYTE5 STRING,CP05_T55_BYTE6 STRING,CP05_T55_ACCT_TYPE STRING,CP05_T55AN_BYTE STRING,CP05_T56_OPTION STRING,CP05_T56_BYTE1 STRING,CP05_T56_BYTE2 STRING,CP05_T56_BYTE3 STRING,CP05_T56_BYTE4 STRING,CP05_T56_BYTE5 STRING,CP05_T56_BYTE6 STRING,CP05_T56_ACCT_TYPE STRING,CP05_T56AN_BYTE STRING,CP05_T77_OPTION STRING,CP05_T77_BYTE1 STRING,CP05_T77_BYTE2 STRING,CP05_T77_BYTE3 STRING,CP05_T71F_CURR STRING,CP05_T71F_AMOUNT DOUBLE,CP05_T71B_DESC STRING,CP05_AGENCY STRING,CP05_SWF2_FILL STRING,CP05_DRAFT_NUMBER STRING,CP05_REMITTER_NAME STRING,CP05_FEE_ACCOUNT LONG,CP05_FEE_AMOUNT DOUBLE,CP05_FEE_CURRENCY STRING,CP05_CHARGE_METHOD STRING,CP05_CHARGE_FLAG STRING,CP05_ACTION STRING,CP05_PREVIOUS_STATUS STRING,CP05_FX_BUYING_RATE DOUBLE,CP05_FX_SELLING_RATE DOUBLE,CP05_SAFE_DECLARED STRING,CP05_WARRANT_TYPE STRING,CP05_WARRANT_NO STRING,DP05_WARRANT_DATE LONG,CP05_CABLE_FEE DOUBLE,CP05_COMMISSION DOUBLE,CP05_BUY_SELL_DIF DOUBLE,CP05_NON_FX_FEE DOUBLE,CP05_RE_DIRECT_FEE DOUBLE,CP05_AMENDMENT_FEE DOUBLE,CP05_RETURN_REMT_FEE DOUBLE,CP05_LOSS_STOP_FEE DOUBLE,CP05_WARRANT_PUR_FEE DOUBLE,CP05_OTHER_FEE DOUBLE,CP05_MT_TAG75_TAG76 STRING,CP05_REASON_CODE STRING,CP05_REASON_COMMENT STRING,CP05_BUSINESS_TYPE STRING,CP05_FX_STAT_NO LONG,CP05_CASH_STAT_NO LONG,CP05_IMAGE_ID STRING,CP05_CHRG_AMT DOUBLE,CP05_CHRG_ACCT_NO LONG,CP05_SWIFT_FEE_TYPE STRING,CP05_PRIORITY STRING,CP05_WARR_VALIDATED STRING,CP05_PROMO_NO STRING,CP05_DRAW_MTH STRING,CP05_BGR_TELLER LONG,CP05_BGA_TELLER LONG,CP05_RATE_TYPE STRING,CP05_MSG_TYPE_OPT STRING,CP05_RCHG_CURR STRING,CP05_RCHG_AMOUNT DOUBLE,CP05_BG_JRNL_NO LONG,CP05_PB_FLAG STRING,CP05_CUST_TYPE STRING,CP05_RATE_TYPE_ACCT STRING,CP05_SUB_ACCT_TYPE STRING,CP05_VCHR_TYPE STRING,CP05_VCHR_NO STRING,CP05_BG_AP_DATE STRING,CP05_BASE_CURR_AMT DOUBLE,CP05_CARD_NO STRING,LAST_MAINT_DATE1 STRING,LAST_MAINT_FLAG1 STRING,ETL_DATE STRING",
+    "filter": "",
+    "cols": [
+      {
+        "name": "CP05_INST_NO",
+        "alias": "CP05_INST_NO",
+        "context": "机构号"
+      },
+      {
+        "name": "CP05_BRANCH_NO",
+        "alias": "CP05_BRANCH_NO",
+        "context": "交易网点号"
+      },
+      {
+        "name": "CP05_POST_DATE",
+        "alias": "CP05_POST_DATE",
+        "context": "实际交易发生日期"
+      },
+      {
+        "name": "CP05_REFERENCE",
+        "alias": "CP05_REFERENCE",
+        "context": "ISN参考号"
+      },
+      {
+        "name": "CP05_REASON_CODE",
+        "alias": "CP05_REASON_CODE",
+        "context": "理由码"
+      },
+      {
+        "name": "CP05_REASON_COMMENT",
+        "alias": "CP05_REASON_COMMENT",
+        "context": "理由"
+      },
+      {
+        "name": "CP05_BUSINESS_TYPE",
+        "alias": "CP05_BUSINESS_TYPE",
+        "context": "业务类型"
+      },
+      {
+        "name": "CP05_FX_STAT_NO",
+        "alias": "CP05_FX_STAT_NO",
+        "context": "结售汇统计分析码"
+      },
+      {
+        "name": "CP05_CASH_STAT_NO",
+        "alias": "CP05_CASH_STAT_NO",
+        "context": "现金统计分析码"
+      },
+      {
+        "name": "CP05_CUST_TYPE",
+        "alias": "CP05_CUST_TYPE",
+        "context": "客户类型"
+      }
+    ],
+    "cache": {
+      "enable": false,
+      "level": 1,
+      "name": "SWF2"
+    },
+    "repartion": {
+      "enable": true,
+      "numPartition": 1,
+      "cols": ""
+    }
+  }
+]

@@ -1,0 +1,667 @@
+[
+  {
+    "name": "CUST_ID",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "网银客户号"
+  },
+  {
+    "name": "TRAN_CUSM_NO",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "账号"
+  },
+  {
+    "name": "TRAN_TYPE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "交易类型"
+  },
+  {
+    "name": "OPP_ACT_NO",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "交易对手"
+  },
+  {
+    "name": "FIRST_TRAN_TIME",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "首笔交易时间"
+  },
+  {
+    "name": "FIRST_TRAN_AMOUNT",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "首笔交易金额"
+  },
+  {
+    "name": "SUM_TRAN_AMOUNT",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "交易总金额"
+  },
+  {
+    "name": "SUM_TRAN_COUNT",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "交易总笔数"
+  },
+  {
+    "name": "G_5",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "支付类型"
+  },
+  {
+    "name": "PAY",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "金额大于5元的交易笔数"
+  },
+  {
+    "name": "PAY_TYPE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "支付方式"
+  },
+  {
+    "name": "NAME_ZH",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "名称"
+  },
+  {
+    "name": "MKSG_ID",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "市场细分ID"
+  },
+  {
+    "name": "CIF",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "后台客户号"
+  },
+  {
+    "name": "ENT_CDE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "组织机构代码"
+  },
+  {
+    "name": "IDENTITY_TYPE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "证件类型"
+  },
+  {
+    "name": "IDENTITY_NUM",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "证件号码"
+  },
+  {
+    "name": "IDENTITY_OTH",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "其他证件类型说明"
+  },
+  {
+    "name": "BANK_ID_O",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "开户网银机构"
+  },
+  {
+    "name": "BANK_ID_M",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "维护网银机构"
+  },
+  {
+    "name": "POSTCODE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "邮政编码"
+  },
+  {
+    "name": "ADDRESS",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "地址"
+  },
+  {
+    "name": "PHONE1",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "电话1"
+  },
+  {
+    "name": "PHONE2",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "电话2"
+  },
+  {
+    "name": "FAX",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "传真"
+  },
+  {
+    "name": "MOBILE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "手机"
+  },
+  {
+    "name": "EMAIL",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "EMAIL"
+  },
+  {
+    "name": "STATUS",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "资料状态"
+  },
+  {
+    "name": "CRT_DATE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "添加时间"
+  },
+  {
+    "name": "BIRTHDAY",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "出生日期"
+  },
+  {
+    "name": "EDUCATION",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "教育程度"
+  },
+  {
+    "name": "FAMILY",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "家庭状况"
+  },
+  {
+    "name": "WEDDED",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "婚姻状况"
+  },
+  {
+    "name": "INCOME",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "收入状况"
+  },
+  {
+    "name": "FIRST_NAME",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "FIRST_NAME"
+  },
+  {
+    "name": "LAST_NAME",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "LAST_NAME"
+  },
+  {
+    "name": "MIDDLE_NAME",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "MIDDLE_NAME"
+  },
+  {
+    "name": "COUNTRY",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "国家"
+  },
+  {
+    "name": "PROVINCE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "省"
+  },
+  {
+    "name": "CITY",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "城市"
+  },
+  {
+    "name": "RESIDENCE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "居住地"
+  },
+  {
+    "name": "TYPE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "客户类型"
+  },
+  {
+    "name": "SYN_FLAG",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "同步标志"
+  },
+  {
+    "name": "DESCRIPTION",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "描述"
+  },
+  {
+    "name": "BIZ_ID",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "商户号"
+  },
+  {
+    "name": "VCT_ID",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "行业类型具体请见对照表"
+  },
+  {
+    "name": "BANK_ID_EBMS",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "EBMS维护网银机构"
+  },
+  {
+    "name": "SECURITY",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "安全等级"
+  },
+  {
+    "name": "CIF_VERSION",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "版本号"
+  },
+  {
+    "name": "TIME_ZONE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "时区代码"
+  },
+  {
+    "name": "SPECIAL_TYPE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "专区类型"
+  },
+  {
+    "name": "IS_DELETE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "删除标识"
+  },
+  {
+    "name": "DEL_DATE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "删除日期"
+  },
+  {
+    "name": "1_IS_CHNL",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "是否web"
+  },
+  {
+    "name": "1_FEE_MODE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "web网银收费模式"
+  },
+  {
+    "name": "1_STATUS",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "web资料状态"
+  },
+  {
+    "name": "1_CRT_DATE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "web添加时间"
+  },
+  {
+    "name": "1_REG_TYP",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "web注册方式"
+  },
+  {
+    "name": "2_IS_CHNL",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "是否mobile"
+  },
+  {
+    "name": "2_FEE_MODE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "mobile网银收费模式"
+  },
+  {
+    "name": "2_STATUS",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "mobile资料状态"
+  },
+  {
+    "name": "2_CRT_DATE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "mobile添加时间"
+  },
+  {
+    "name": "2_REG_TYP",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "mobile注册方式"
+  },
+  {
+    "name": "4_IS_CHNL",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "是否HOMEBANK"
+  },
+  {
+    "name": "4_FEE_MODE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "HOMEBANK网银收费模式"
+  },
+  {
+    "name": "4_STATUS",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "HOMEBANK资料状态"
+  },
+  {
+    "name": "4_CRT_DATE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "HOMEBANK添加时间"
+  },
+  {
+    "name": "4_REG_TYP",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "HOMEBANK注册方式"
+  },
+  {
+    "name": "6_IS_CHNL",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "是否对接"
+  },
+  {
+    "name": "6_FEE_MODE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "对接网银收费模式"
+  },
+  {
+    "name": "6_STATUS",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "对接资料状态"
+  },
+  {
+    "name": "6_CRT_DATE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "对接添加时间"
+  },
+  {
+    "name": "6_REG_TYP",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "对接注册方式"
+  },
+  {
+    "name": "MONTH_ACT_TIME",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "月活交易时间"
+  },
+  {
+    "name": "MONTH_ACT_AMOUNT",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "月活首笔交易金额"
+  },
+  {
+    "name": "MONTH_TRAN_OPP",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "月活交易对手"
+  },
+  {
+    "name": "MONTH_TRAN_TYPE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "月活交易类型"
+  },
+  {
+    "name": "MONTH_PAY_TYPE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "月活支付方式"
+  },
+  {
+    "name": "LAST_MONTH_ACT_TIME",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "上月月活时间"
+  },
+  {
+    "name": "ETL_DATE",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "清洗日期"
+  },
+  {
+    "name": "cbr_no",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "机构号"
+  },
+  {
+    "name": "br_no",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "机构号(数值)"
+  },
+  {
+    "name": "br_name",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "机构名称"
+  },
+  {
+    "name": "br_type",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "机构类型"
+  },
+  {
+    "name": "cent_br",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "上级机构"
+  },
+  {
+    "name": "cent_br_nm",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "上级机构名"
+  },
+  {
+    "name": "br_gx",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "管辖行号"
+  },
+  {
+    "name": "br_gx_name",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "管辖行名称"
+  },
+  {
+    "name": "br_gx_type",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "管辖行类型"
+  },
+  {
+    "name": "gx_yy",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "管辖行营业部"
+  },
+  {
+    "name": "gx_yy_name",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "管辖行营业部名称"
+  },
+  {
+    "name": "flag",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "网点归属-1"
+  },
+  {
+    "name": "lvl",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "网点层级"
+  },
+  {
+    "name": "branch",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "联行号"
+  },
+  {
+    "name": "branchnm",
+    "location": "filter",
+    "comment": "字段定位，group 表示维度，agg 表示指标，filter 表示过滤条件，window 表示时间窗口",
+    "type1": "string",
+    "friendly_name": "联行名称"
+  }
+]

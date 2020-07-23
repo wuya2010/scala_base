@@ -8,6 +8,8 @@ object FunDemo1 {
         /*foo()
         foo*/
         // foo2...  foo1... foo1...
+
+        //todo: val 与 def 的区别
         foo1
         foo1
         foo2

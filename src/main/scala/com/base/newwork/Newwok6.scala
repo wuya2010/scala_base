@@ -13,7 +13,7 @@ object Newwok6 {
     }
 }
 
-class BankAccount(initialBalance: Double) {
+class BankAccount2(initialBalance: Double) {
     private var balance = initialBalance
     
     def deposit(amount: Double) = {
@@ -27,7 +27,7 @@ class BankAccount(initialBalance: Double) {
     }
 }
 
-class CheckingAccount(initialBalance: Double) extends BankAccount(initialBalance) {
+class CheckingAccount2(initialBalance: Double) extends BankAccount(initialBalance) {
     
     override def deposit(amount: Double): Double = {
         super.deposit(amount - 1)

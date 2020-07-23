@@ -6,11 +6,11 @@ object Newwok7 {
     }
 }
 
-abstract class Shape {
+abstract class Shape2 {
     def centerPoint: Point
 }
 
-class Rectangle(leftTop: Point, rightBottom: Point) extends Shape {
+class Rectangle2(leftTop: Point, rightBottom: Point) extends Shape {
     override def centerPoint: Point = {
         new Point((leftTop.x + rightBottom.x) / 2, (leftTop.y + rightBottom.y) / 2)
     }
@@ -18,7 +18,7 @@ class Rectangle(leftTop: Point, rightBottom: Point) extends Shape {
 }
 
 
-class Circle(center: Point, r: Double) extends Shape {
+class Circle2(center: Point, r: Double) extends Shape {
     override def centerPoint: Point = center
     
     def area: Double = math.Pi * r * r

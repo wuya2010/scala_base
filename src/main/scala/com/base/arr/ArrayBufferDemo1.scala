@@ -15,16 +15,18 @@ object ArrayBufferDemo1 {
 
         //增加元素
         buffer += (101, 200)
-        
+
+        println(buffer)
+
         buffer.insert(0, -1, -2)
         
         buffer.remove(0)  // 删除下标为0的元素
         println(buffer)
         buffer.remove(0, 2)  // 从下标为0开始删, 删2个
         
-        println(buffer)
+//        println(buffer)
         buffer -= 100  // 删除第一个碰到的100
-        println(buffer)
+//        println(buffer)
     }
 }
 
